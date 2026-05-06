@@ -1,0 +1,225 @@
+[{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c730f"
+  },
+  "name": "Điện thoại",
+  "description": "Smartphone, điện thoại di động các loại",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.188Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.188Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7310"
+  },
+  "name": "Laptop & Máy tính",
+  "description": "Laptop, PC, máy tính bảng",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.188Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.188Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7311"
+  },
+  "name": "Phụ kiện điện tử",
+  "description": "Tai nghe, sạc, cáp, ốp lưng, chuột, bàn phím",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.188Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.188Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7312"
+  },
+  "name": "Giày thể thao",
+  "description": "Giày chạy bộ, giày tập gym, sneaker",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.188Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.188Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7313"
+  },
+  "name": "Giày da & Giày tây",
+  "description": "Giày công sở, giày da nam nữ",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.188Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.188Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7314"
+  },
+  "name": "Dép & Sandal",
+  "description": "Dép quai hậu, sandal, dép xỏ ngón",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.188Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.188Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7315"
+  },
+  "name": "Áo nam",
+  "description": "Áo thun, áo sơ mi, áo polo, áo khoác nam",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.188Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.188Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7316"
+  },
+  "name": "Áo nữ",
+  "description": "Áo thun nữ, áo kiểu, áo khoác nữ",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.188Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.188Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7317"
+  },
+  "name": "Quần nam",
+  "description": "Quần jean, quần kaki, quần short nam",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.188Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.188Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7318"
+  },
+  "name": "Quần nữ",
+  "description": "Quần jean nữ, váy, chân váy",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.188Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.188Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7319"
+  },
+  "name": "Mỹ phẩm",
+  "description": "Son, kem dưỡng, toner, serum",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.188Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.188Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c731a"
+  },
+  "name": "Chăm sóc cá nhân",
+  "description": "Dầu gội, sữa tắm, kem đánh răng",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.188Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.188Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c731b"
+  },
+  "name": "Đồng hồ & Trang sức",
+  "description": "Đồng hồ nam nữ, vòng tay, nhẫn",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.188Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.188Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c731c"
+  },
+  "name": "Túi xách & Balo",
+  "description": "Túi xách, balo, ví, cặp da",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.188Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.188Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c731d"
+  },
+  "name": "Thực phẩm & Đồ uống",
+  "description": "Sữa, nước giải khát, snack, thực phẩm chức năng",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.188Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.188Z"
+  }
+}]

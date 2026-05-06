@@ -1,0 +1,53 @@
+Đề tài: Quản lý kho hàng 
+1. Quản lý tài khoản
+-	Đăng ký, Đăng nhập / đăng xuất, quên mật khẩu 
+-	Phân quyền người dùng: Admin, Nhân viên kho, Quản lý
+-	Quản lý hồ sơ cá nhân: Đổi mật khẩu, Khóa / mở khóa tài khoản
+2. Quản lý sản phẩm
+-	Thêm sản phẩm, Sửa sản phẩm, Xóa sản phẩm, Xem danh sách sản phẩm, Tìm kiếm sản phẩm
+-	Lọc theo: danh mục, nhà cung cấp, tình trạng.
+-	Thông tin sản phẩm gồm: Tên sản phẩm, Mã sản phẩm (SKU), Hình ảnh, Giá nhập, Giá bán, Số lượng tồn, Danh mục, Nhà cung cấp, Mô tả, Mã QR, Mã Vạch 
+
+3. Quản lý danh mục sản phẩm
+-	Thêm danh mục, Sửa danh mục, Xóa danh mục, Hiển thị danh mục
+4. Quản lý nhà cung cấp
+-	Thêm nhà cung cấp, Sửa thông tin, Xóa nhà cung cấp, Xem danh sách nhà cung cấp
+-	Thông tin gồm: Tên, Số điện thoại, Email, Địa chỉ 
+5. Quản lý nhập kho
+-	Tạo phiếu nhập kho, Chọn nhà cung cấp, Thêm sản phẩm nhập, Số lượng nhập, Giá nhập, Ngày nhập
+-	Chức năng: Xem lịch sử nhập kho, In phiếu nhập, Cập nhật tồn kho
+6. Quản lý xuất kho
+-	Tạo phiếu xuất kho
+-	Chọn sản phẩm
+-	Nhập số lượng xuất
+-	Ghi chú lý do xuất
+Chức năng: Lịch sử xuất kho, Kiểm tra tồn kho trước khi xuất
+7. Quản lý tồn kho
+-	Xem số lượng tồn
+-	Cảnh báo sắp hết hàng
+-	Cảnh báo tồn kho thấp
+-	Kiểm kê kho
+10. Thống kê và báo cáo
+-	Thống kê nhập kho, xuất kho, tồn kho
+-	Top sản phẩm nhập nhiều, bán nhiều
+-	Biểu đồ
+
+11. Tìm kiếm thông minh
+•	Tìm sản phẩm theo:
+o	tên
+o	mã SKU
+o	danh mục
+13. Thông báo
+-	Sắp hết hàng
+-	Hàng tồn lâu
+14. Import / Export dữ liệu
+-	Import Excel sản phẩm
+-	Export báo cáo Excel, Export PDF
+15. Dashboard quản trị
+Trang tổng quan gồm:
+-	Tổng sản phẩm
+-	Tổng nhập kho
+-	Tổng xuất kho
+-	Sản phẩm sắp hết
+-	Biểu đồ nhập / xuất
+16. AI chatbot, gợi ý nhập hàng 
