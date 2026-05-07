@@ -1,0 +1,70 @@
+[{
+  "_id": {
+    "$oid": "69f63c912c452c68d81a07bb"
+  },
+  "email": "anhk7539@gmail.com",
+  "otp": "$2b$10$qv7alaY.8UpOr3VO8wJs1.75LQEJewcfIgYBYmI76hmuH7ho4oN2.",
+  "createdAt": {
+    "$date": "2026-05-02T18:04:01.642Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T18:04:01.642Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69fac71c0dd99dd1f67ee0e0"
+  },
+  "email": "anhk7539@gmail.com",
+  "otp": "$2b$10$eGWzRuRqz8WYvLpiiI/4jOwy4DNZal2dhfhxokhKmbZEKxi62wBB2",
+  "createdAt": {
+    "$date": "2026-05-06T04:44:12.112Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-06T04:44:12.112Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69fad02c264569a8fb7cc9f2"
+  },
+  "email": "anhk7539@gmail.com",
+  "otp": "$2b$10$2IZgQeO5dr0PNldqEbfeEu55toV0TshGtVoJMDazKZNmG39/jKowi",
+  "createdAt": {
+    "$date": "2026-05-06T05:22:52.733Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-06T05:22:52.733Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69fad0ae4e8843f82a247acd"
+  },
+  "email": "anhk7539@gmail.com",
+  "otp": "$2b$10$Vk42qQl6rKmrzJnWyQBSr.EfFd/oYOB6RPqnSQVVzLqEoGS9jMpcy",
+  "createdAt": {
+    "$date": "2026-05-06T05:25:02.914Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-06T05:25:02.914Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69fccff8c9ea280ba855e73b"
+  },
+  "email": "anhk7539@gmail.com",
+  "otp": "$2b$10$Crl/1VuVYp7irbfY0yHuOOcRnNWNxiKNkGiaonAwFfhbc276QUOS6",
+  "createdAt": {
+    "$date": "2026-05-07T17:46:32.525Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-07T17:46:32.525Z"
+  },
+  "__v": 0
+}]

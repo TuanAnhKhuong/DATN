@@ -1,0 +1,816 @@
+[{
+  "_id": {
+    "$oid": "69ef412d030fdd7ef3b98d1e"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "user",
+  "content": "hi",
+  "createdAt": {
+    "$date": "2026-04-27T10:57:49.073Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T10:57:49.073Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ef412d030fdd7ef3b98d20"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "bot",
+  "content": "Chào bạn! Tôi là trợ lý AI của hệ thống Quản lý kho. Rất vui được hỗ trợ bạn.\n\nBạn có câu hỏi hoặc cần tìm thông tin gì về quản lý kho không? Hãy cho tôi biết nhé!",
+  "createdAt": {
+    "$date": "2026-04-27T10:57:49.081Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T10:57:49.081Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ef4138030fdd7ef3b98d24"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "user",
+  "content": "hello",
+  "createdAt": {
+    "$date": "2026-04-27T10:58:00.712Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T10:58:00.712Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ef4138030fdd7ef3b98d26"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "bot",
+  "content": "Chào bạn! Tôi là trợ lý AI được thiết kế để hỗ trợ bạn với các câu hỏi và thông tin liên quan đến hệ thống Quản lý kho.\n\nBạn có thể chia sẻ những gì bạn đang thắc mắc hoặc cần giúp đỡ không? Tôi sẵn lòng lắng nghe và hỗ trợ bạn một cách tốt nhất.",
+  "createdAt": {
+    "$date": "2026-04-27T10:58:00.714Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T10:58:00.714Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ef4152030fdd7ef3b98d2a"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "user",
+  "content": "sản phẩm bán chạy nhất",
+  "createdAt": {
+    "$date": "2026-04-27T10:58:26.531Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T10:58:26.531Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ef4152030fdd7ef3b98d2c"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "bot",
+  "content": "Chào bạn! \"Sản phẩm bán chạy nhất\" là một thông tin cực kỳ quan trọng đối với bất kỳ hoạt động kinh doanh nào, và hệ thống Quản lý kho (WMS) đóng vai trò trung tâm trong việc cung cấp dữ liệu để xác định điều này.\n\nLà một AI, tôi không có quyền truy cập vào dữ liệu cụ thể của hệ thống kho của bạn. Tuy nhiên, tôi có thể hướng dẫn bạn cách tìm thông tin về các sản phẩm bán chạy nhất trong một hệ thống Quản lý kho (WMS) và giải thích tại sao thông tin này lại quan trọng:\n\n### **Cách tìm \"Sản phẩm bán chạy nhất\" trong WMS:**\n\n1.  **Mô-đun Báo cáo & Phân tích (Reporting & Analytics):**\n    *   Hầu hết các WMS hiện đại đều có các mô-đun báo cáo mạnh mẽ cho phép bạn truy xuất dữ liệu bán hàng và xuất kho.\n    *   Bạn nên tìm các báo cáo như:\n        *   **Báo cáo doanh số bán hàng (Sales Reports):** Thường hiển thị số lượng sản phẩm đã bán ra, doanh thu theo từng mặt hàng trong một khoảng thời gian nhất định (tuần, tháng, quý, năm).\n        *   **Báo cáo lịch sử xuất kho (Outbound History Reports):** Cung cấp thông tin chi tiết về các mặt hàng đã được xuất khỏi kho, bao gồm số lượng và thời gian.\n        *   **Báo cáo thống kê mặt hàng (Item Statistics/Performance):** Tổng hợp dữ liệu về tần suất xuất nhập, số lượng tồn kho trung bình, và hiệu suất bán hàng của từng sản phẩm.\n    *   Bạn có thể lọc và sắp xếp dữ liệu theo **số lượng bán ra**, **doanh thu tạo ra**, hoặc thậm chí **lợi nhuận** để xác định sản phẩm bán chạy nhất.\n\n2.  **Tích hợp với Hệ thống khác (ERP, BI):**\n    *   WMS thường tích hợp với các hệ thống ERP (Enterprise Resource Planning) hoặc các công cụ Business Intelligence (BI). Các hệ thống này sẽ tổng hợp dữ liệu từ WMS và các nguồn khác để cung cấp cái nhìn toàn diện hơn về hiệu suất sản phẩm, bao gồm cả các phân tích chuyên sâu về sản phẩm bán chạy.\n\n3.  **Các chỉ số cần xem xét:**\n    *   **Số lượng bán ra (Quantity Sold):** Mặt hàng nào được bán với số lượng lớn nhất?\n    *   **Doanh thu (Revenue):** Mặt hàng nào mang lại doanh thu cao nhất? (Đôi khi một sản phẩm đắt tiền, bán số lượng ít nhưng vẫn mang lại doanh thu cao hơn sản phẩm rẻ tiền bán số lượng lớn).\n    *   **Lợi nhuận (Profit Margin):** Mặt hàng nào mang lại lợi nhuận cao nhất cho mỗi đơn vị bán ra?\n\n### **Tại sao việc biết \"Sản phẩm bán chạy nhất\" lại quan trọng đối với Quản lý kho:**\n\n1.  **Tối ưu hóa tồn kho (Inventory Optimization):**\n    *   Giúp bạn đặt hàng đúng thời điểm và với số lượng phù hợp cho các mặt hàng phổ biến, tránh tình trạng hết hàng (stock-out) làm mất doanh thu hoặc tồn kho quá nhiều gây ứ đọng vốn.\n    *   Thiết lập điểm đặt hàng lại (reorder point) và mức tồn kho an toàn (safety stock) chính xác hơn.\n\n2.  **Sắp xếp kho bãi hiệu quả (Warehouse Layout & Slotting):**\n    *   Bạn có thể đặt các sản phẩm bán chạy nhất ở những vị trí dễ tiếp cận, gần khu vực đóng gói hoặc vận chuyển để giảm thời gian di chuyển và tăng tốc độ lấy hàng (picking speed). Điều này giúp cải thiện hiệu suất hoạt động của kho.\n\n3.  **Dự báo nhu cầu (Demand Forecasting):**\n    *   Dữ liệu bán hàng của các sản phẩm bán chạy nhất là đầu vào quan trọng cho việc dự báo nhu cầu trong tương lai, giúp bạn lên kế hoạch nhập hàng, sản xuất và phân phối hiệu quả hơn.\n\n4.  **Chiến lược kinh doanh và tiếp thị (Business & Marketing Strategy):**\n    *   Thông tin này giúp bộ phận kinh doanh và tiếp thị tập trung vào các sản phẩm chủ lực, phát triển các chương trình khuyến mãi, hoặc tạo combo sản phẩm.\n\n5.  **Quản lý không gian kho (Space Management):**\n    *   Xác định được sản phẩm bán chạy giúp bạn phân bổ không gian lưu trữ một cách hợp lý, đảm bảo đủ chỗ cho các mặt hàng có tần suất luân chuyển cao.\n\n**Để tìm sản phẩm bán chạy nhất trong kho của bạn, bạn nên:**\n\n*   **Truy cập vào mô-đun Báo cáo (Reports) của hệ thống WMS của bạn.**\n*   **Liên hệ với quản trị viên hệ thống (System Administrator) hoặc đội ngũ IT** nếu bạn không chắc chắn về cách tạo hoặc truy xuất báo cáo này.\n*   **Xác định tiêu chí \"bán chạy nhất\" của bạn** (theo số lượng, doanh thu, lợi nhuận) để có báo cáo phù hợp.\n\nChúc bạn thành công trong việc khai thác dữ liệu từ hệ thống WMS của mình!",
+  "createdAt": {
+    "$date": "2026-04-27T10:58:26.533Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T10:58:26.533Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ef4173030fdd7ef3b98d30"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "user",
+  "content": "sản phẩm nào đang bán chạy nhất trong kho hàng này",
+  "createdAt": {
+    "$date": "2026-04-27T10:58:59.415Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T10:58:59.415Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ef4173030fdd7ef3b98d32"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "bot",
+  "content": "Tôi hiểu rằng bạn muốn biết cụ thể \"sản phẩm nào đang bán chạy nhất trong kho hàng này\" ngay lập tức.\n\nTuy nhiên, với vai trò là một trợ lý AI tổng quát, tôi **không có quyền truy cập trực tiếp vào dữ liệu thực tế, theo thời gian thực** của hệ thống quản lý kho (WMS) cụ thể mà bạn đang sử dụng. Mỗi kho hàng có dữ liệu riêng và bảo mật.\n\nĐể có được thông tin chính xác về **sản phẩm đang bán chạy nhất trong kho hàng của bạn**, bạn cần thực hiện các bước sau trên hệ thống WMS của mình:\n\n1.  **Đăng nhập vào hệ thống WMS của bạn.**\n2.  **Tìm kiếm mục \"Báo cáo\" (Reports) hoặc \"Phân tích\" (Analytics).** Đây là nơi tập trung các công cụ để trích xuất dữ liệu.\n3.  **Tìm các loại báo cáo liên quan đến bán hàng hoặc xuất kho:**\n    *   **Báo cáo doanh số bán hàng (Sales Report):** Thường cho phép bạn xem sản phẩm nào đã bán được số lượng nhiều nhất hoặc mang lại doanh thu cao nhất trong một khoảng thời gian nhất định (ví dụ: ngày hôm nay, tuần qua, tháng qua).\n    *   **Báo cáo lịch sử xuất kho (Outbound History Report):** Cung cấp thông tin chi tiết về các mặt hàng đã được lấy ra khỏi kho để giao hàng.\n    *   **Báo cáo thống kê mặt hàng (Item Performance/Statistics):** Tổng hợp hiệu suất của từng mặt hàng.\n4.  **Cấu hình báo cáo:**\n    *   **Chọn khoảng thời gian:** Xác định bạn muốn xem \"bán chạy nhất\" trong khoảng thời gian nào (hôm nay, 7 ngày qua, 30 ngày qua, quý này...).\n    *   **Sắp xếp dữ liệu:** Sắp xếp kết quả theo **số lượng bán ra (Quantity Sold)** hoặc **doanh thu (Revenue)** để xác định các sản phẩm đứng đầu.\n5.  **Xuất báo cáo (nếu cần) và phân tích kết quả.**\n\nNếu bạn gặp khó khăn trong việc tìm kiếm các báo cáo này, hãy liên hệ với quản trị viên hệ thống (System Administrator) hoặc bộ phận IT của công ty bạn để được hướng dẫn cụ thể về cách truy xuất thông tin này trên WMS của bạn.\n\nTôi hy vọng hướng dẫn này giúp bạn tìm được thông tin mình cần!",
+  "createdAt": {
+    "$date": "2026-04-27T10:58:59.416Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T10:58:59.416Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ef41ab030fdd7ef3b98d38"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "user",
+  "content": "hi",
+  "createdAt": {
+    "$date": "2026-04-27T10:59:55.092Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T10:59:55.092Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ef41ab030fdd7ef3b98d3a"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "bot",
+  "content": "Chào bạn! Tôi là trợ lý AI được thiết kế đặc biệt để hỗ trợ bạn với các câu hỏi và thông tin liên quan đến **hệ thống Quản lý kho (WMS)**.\n\nTôi có thể giúp bạn những việc sau đây:\n\n1.  **Giải thích các khái niệm và thuật ngữ trong quản lý kho:** Ví dụ: FIFO, LIFO, SKU, mã vạch, quy trình nhập kho, xuất kho, kiểm kê, v.v.\n2.  **Hướng dẫn về quy trình hoạt động của kho:** Các bước trong quy trình nhập hàng, lưu trữ, lấy hàng (picking), đóng gói, xuất hàng, kiểm kê kho.\n3.  **Tư vấn về các tính năng và lợi ích của hệ thống WMS:** WMS giúp tối ưu hóa không gian, tăng hiệu quả vận hành, giảm sai sót, cải thiện độ chính xác tồn kho như thế nào.\n4.  **Giải đáp các vấn đề thường gặp trong quản lý kho:** Làm thế nào để giảm thất thoát hàng hóa, tăng tốc độ lấy hàng, quản lý hàng trả về.\n5.  **Cung cấp thông tin về các báo cáo và phân tích mà WMS có thể tạo ra:** Ví dụ: báo cáo tồn kho, báo cáo luân chuyển hàng hóa, báo cáo hiệu suất hoạt động kho.\n6.  **Gợi ý các phương pháp hay nhất (best practices) trong quản lý kho.**\n\n**Để tôi có thể hỗ trợ bạn tốt nhất, bạn có câu hỏi cụ thể nào về quản lý kho không? Hoặc bạn đang gặp phải vấn đề gì cần giải đáp?** Hãy cho tôi biết nhé!",
+  "createdAt": {
+    "$date": "2026-04-27T10:59:55.093Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T10:59:55.093Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ef41cb030fdd7ef3b98d40"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "user",
+  "content": "hi",
+  "createdAt": {
+    "$date": "2026-04-27T11:00:27.686Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T11:00:27.686Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ef41cb030fdd7ef3b98d42"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "bot",
+  "content": "Chào bạn! Rất vui được gặp lại.\n\nTôi là trợ lý AI chuyên về hệ thống Quản lý kho (WMS). Bạn có câu hỏi nào hoặc cần tôi giúp đỡ về bất kỳ khía cạnh nào của quản lý kho không?\n\nHãy cho tôi biết điều bạn đang quan tâm nhé!",
+  "createdAt": {
+    "$date": "2026-04-27T11:00:27.687Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T11:00:27.687Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ef42ef030fdd7ef3b98e17"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "user",
+  "content": "hello",
+  "createdAt": {
+    "$date": "2026-04-27T11:05:19.988Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T11:05:19.988Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ef42ef030fdd7ef3b98e19"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "bot",
+  "content": "Chào bạn! Tôi là trợ lý AI của hệ thống Quản lý kho. Tôi ở đây để hỗ trợ bạn với bất kỳ câu hỏi nào liên quan đến hệ thống.\n\nBạn cần giúp đỡ về vấn đề gì? Hãy cho tôi biết nhé!",
+  "createdAt": {
+    "$date": "2026-04-27T11:05:19.989Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T11:05:19.989Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ef5efd030fdd7ef3b99118"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "user",
+  "content": "hi",
+  "createdAt": {
+    "$date": "2026-04-27T13:05:01.798Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T13:05:01.798Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ef5efd030fdd7ef3b9911a"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "bot",
+  "content": "Chào bạn! Tôi là trợ lý AI chuyên về hệ thống Quản lý kho (WMS). Rất vui được hỗ trợ bạn.\n\nBạn có thể cho tôi biết bạn đang quan tâm đến vấn đề gì trong quản lý kho không? Ví dụ, bạn có thể hỏi về:\n\n*   **Các khái niệm cơ bản** (ví dụ: FIFO, SKU là gì?)\n*   **Quy trình trong kho** (ví dụ: Quy trình nhập hàng diễn ra như thế nào?)\n*   **Các tính năng của WMS** (ví dụ: WMS giúp tối ưu hóa không gian kho bằng cách nào?)\n*   **Các vấn đề bạn đang gặp phải** (ví dụ: Làm sao để giảm sai sót khi lấy hàng?)\n*   **Báo cáo và phân tích** (ví dụ: Có những loại báo cáo nào quan trọng trong kho?)\n\nHãy chia sẻ câu hỏi của bạn, tôi sẵn lòng giải đáp!",
+  "createdAt": {
+    "$date": "2026-04-27T13:05:01.800Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T13:05:01.800Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f1562f0362fce1f94b868e"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "user",
+  "content": "sản phẩm nào bán chạy nhất",
+  "createdAt": {
+    "$date": "2026-04-29T00:51:59.293Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-29T00:51:59.293Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f1562f0362fce1f94b8690"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "bot",
+  "content": "Dựa trên dữ liệu bán ra, đây là 5 sản phẩm bán chạy nhất trong kho:\n\n| Tên sản phẩm               | Danh mục          | SKU       | Số lượng tồn kho | Giá bán (VNĐ) | Số lượng đã bán | Đơn vị |\n| :------------------------- | :---------------- | :-------- | :--------------- | :------------ | :-------------- | :----- |\n| Samsung Galaxy S24 Ultra 512GB | Điện thoại        | SP00003   | 30               | 33.990.000    | 150             | Chiếc  |\n| MacBook Air M3 15 inch     | Laptop & Máy tính | SP00013   | 22               | 34.990.000    | 145             | Chiếc  |\n| Bánh Oreo kem Socola 133g  | Thực phẩm & Đồ uống | SP00099   | 101              | 29.000        | 100             | Gói    |\n| iPhone 14 128GB            | Điện thoại        | SP00010   | 30               | 17.990.000    | 100             | Chiếc  |\n| Nike Dunk Low Retro        | Giày thể thao     | SP00035   | 81               | 2.890.000     | 100             | Đôi    |",
+  "createdAt": {
+    "$date": "2026-04-29T00:51:59.304Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-29T00:51:59.304Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f1563a0362fce1f94b8694"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "user",
+  "content": "báo cáo tháng 4",
+  "createdAt": {
+    "$date": "2026-04-29T00:52:10.227Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-29T00:52:10.227Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f1563a0362fce1f94b8696"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "bot",
+  "content": "Tôi không thể tạo báo cáo tổng hợp cho một tháng cụ thể như tháng 4. Tuy nhiên, tôi có thể lấy danh sách phiếu nhập kho hoặc phiếu xuất kho trong **tháng hiện tại** (nếu hiện tại là tháng 4, tôi có thể lấy cho tháng 4) hoặc trong các khoảng thời gian như hôm nay, tuần này, hoặc tất cả.\n\nBạn muốn xem báo cáo cho loại phiếu nào (nhập kho hay xuất kho) và cho khoảng thời gian **tháng hiện tại** không? Hoặc bạn đang tìm kiếm thông tin nào khác?",
+  "createdAt": {
+    "$date": "2026-04-29T00:52:10.229Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-29T00:52:10.229Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f1564e0362fce1f94b869a"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "user",
+  "content": "có",
+  "createdAt": {
+    "$date": "2026-04-29T00:52:30.739Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-29T00:52:30.739Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f1564e0362fce1f94b869c"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "bot",
+  "content": "Để có báo cáo chi tiết, bạn muốn xem báo cáo **phiếu nhập kho** hay **phiếu xuất kho** của tháng hiện tại (tháng 4)? Hoặc bạn muốn xem cả hai?",
+  "createdAt": {
+    "$date": "2026-04-29T00:52:30.740Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-29T00:52:30.740Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f1565f0362fce1f94b86a3"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "user",
+  "content": "cả 2",
+  "createdAt": {
+    "$date": "2026-04-29T00:52:47.101Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-29T00:52:47.101Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f1565f0362fce1f94b86a5"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "bot",
+  "content": "Đây là báo cáo tổng hợp các phiếu nhập kho và xuất kho trong tháng hiện tại (Tháng 4):\n\n### **Báo cáo phiếu nhập kho trong tháng 4:**\n\n| Mã phiếu | Ngày nhập kho         | Nhà cung cấp           | Tổng số mặt hàng | Tổng giá trị (VNĐ) | Trạng thái  | Ghi chú |\n| :------- | :-------------------- | :--------------------- | :--------------- | :----------------- | :---------- | :------ |\n| PN00012  | 2026-04-07 17:00:00   | Adidas Distribution    | 10               | 480.000            | completed   |         |\n| PN00007  | 2026-04-20 17:00:00   | Công ty CP Nike Việt Nam | 120              | 218.000.000        | completed   |         |\n| PN00006  | 2026-04-20 17:00:00   | Tập đoàn Vinamilk      | 140              | 8.100.000          | completed   |         |\n| PN00005  | 2026-04-21 06:43:08   | Apple Việt Nam         | 30               | 140.700.000        | completed   |         |\n| PN00004  | 2026-04-17 17:00:00   | Xiaomi Việt Nam        | 22               | 92.000.000         | completed   |         |\n\n### **Báo cáo phiếu xuất kho trong tháng 4:**\n\n| Mã phiếu | Ngày xuất kho         | Người nhận          | Loại phiếu        | Tổng số mặt hàng | Tổng giá trị (VNĐ) | Trạng thái  | Ghi chú |\n| :------- | :-------------------- | :------------------ | :---------------- | :--------------- | :----------------- | :---------- | :------ |\n| PX00010  | 2026-04-09 17:00:00   | Trần Mạnh Cường    | sale              | 100              | 2.900.000          | completed   |         |\n| PX00008  | 2026-04-21 06:51:02   | Cao Cuong           | sale              | 54               | 159.460.000        | completed   |         |\n| PX00007  | 2026-04-21 06:50:05   | Trần Minh Chiến     | sale              | 140              | 364.600.000        | completed   |         |\n| PX00006  | 2026-04-21 06:47:02   | Trần Tú Anh         | sale              | 100              | 5.500.000          | completed   |         |\n| PX00005  | 2026-04-21 06:45:40   | Trần Minh Chiến     | sale              | 50               | 44.500.000         | completed   |         |\n| PX00004  | 2026-04-21 06:45:01   | Apple Việt Nam      | return\\_supplier  | 100              | 1.799.000.000      | completed   |         |\n| PX00003  | 2026-04-21 06:44:05   | Cao Cuong           | sale              | 15               | 254.850.000        | completed   |         |\n| PX00002  | 2026-04-18 05:14:05   | Trần Mạnh Cường    | damaged           | 100              | 7.900.000          | completed   |         |\n| PX00001  | 2026-04-09 15:00:42   | Trần Tú Anh         | sale              | 125              | 4.373.750.000      | completed   |         |\n\nBạn có muốn tôi lọc theo trạng thái (ví dụ: chỉ các phiếu đang chờ xử lý) hoặc giới hạn số lượng phiếu hiển thị không?",
+  "createdAt": {
+    "$date": "2026-04-29T00:52:47.102Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-29T00:52:47.102Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f1567b0362fce1f94b86ab"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "user",
+  "content": "snar phẩm bán chậm cần giảm giá",
+  "createdAt": {
+    "$date": "2026-04-29T00:53:15.616Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-29T00:53:15.616Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f1567b0362fce1f94b86ad"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "bot",
+  "content": "Đây là danh sách 10 sản phẩm có tồn kho nhiều nhất trong kho của bạn:\n\n| Tên sản phẩm | Danh mục | SKU | Số lượng tồn kho | Giá bán (VNĐ) | Số lượng đã bán | Đơn vị |\n|---|---|---|---|---|---|---|\n| Túi tote vải canvas | Túi xách & Balo | SP00093 | 232 | 390.000 | 0 | Chiếc |\n| Sữa tươi Vinamilk 100% 1L | Thực phẩm & Đồ uống | SP00095 | 220 | 36.000 | 0 | Hộp |\n| Nike Air Max 90 | Giày thể thao | SP00027 | 212 | 3.290.000 | 0 | Đôi |\n| Dầu xả TRESemmé Salon | Chăm sóc cá nhân | SP00084 | 202 | 125.000 | 0 | Chai |\n| Áo blazer nam một hàng nút | Áo nam | SP00050 | 199 | 1.490.000 | 0 | Chiếc |\n| Nike Pegasus 41 | Giày thể thao | SP00031 | 198 | 3.090.000 | 0 | Đôi |\n| Quần culottes nữ ống rộng | Quần nữ | SP00069 | 197 | 599.000 | 0 | Chiếc |\n| Áo sơ mi lụa nữ | Áo nữ | SP00055 | 192 | 399.000 | 0 | Chiếc |\n| Dép xỏ ngón Havaianas Brasil | Dép & Sandal | SP00043 | 192 | 450.000 | 0 | Đôi |\n| Áo Polo Pique Classic Fit | Áo nam | SP00046 | 191 | 1.890.000 | 0 | Chiếc |\n\n**Nhận xét:**\n\n*   Đáng chú ý là tất cả các sản phẩm trong danh sách này đều có **\"Số lượng đã bán\" là 0**. Điều này cho thấy chúng đang là những sản phẩm tồn kho cao và chưa có giao dịch bán ra nào được ghi nhận.\n*   Đây là những ứng cử viên hàng đầu để bạn xem xét chiến lược giảm giá hoặc các chương trình khuyến mãi để thúc đẩy doanh số.\n\nBạn có muốn tôi cung cấp thêm thông tin về một sản phẩm cụ thể nào trong danh sách này không? Hoặc bạn muốn xem xét các sản phẩm theo tiêu chí khác?",
+  "createdAt": {
+    "$date": "2026-04-29T00:53:15.617Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-29T00:53:15.617Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f158730362fce1f94b8ad4"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "user",
+  "content": "sản phẩm đắt nhất",
+  "createdAt": {
+    "$date": "2026-04-29T01:01:39.749Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-29T01:01:39.749Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f158730362fce1f94b8ad6"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "bot",
+  "content": "Dưới đây là danh sách 5 sản phẩm có giá bán cao nhất trong kho của bạn:\n\n| Tên sản phẩm                | Danh mục          | SKU       | Số lượng tồn kho | Giá bán (VNĐ) | Số lượng đã bán | Đơn vị |\n| :-------------------------- | :---------------- | :-------- | :--------------- | :------------ | :-------------- | :----- |\n| MacBook Pro M3 Pro 14 inch  | Laptop & Máy tính | SP00014   | 20               | 49.990.000    | 0               | Chiếc  |\n| Dell XPS 16 9640            | Laptop & Máy tính | SP00015   | 35               | 42.990.000    | 0               | Chiếc  |\n| Samsung Galaxy Z Fold 5     | Điện thoại        | SP00009   | 48               | 40.990.000    | 0               | Chiếc  |\n| Lenovo ThinkPad X1 Carbon Gen 12 | Laptop & Máy tính | SP00017   | 81               | 39.990.000    | 0               | Chiếc  |\n| ASUS ROG Strix G16          | Laptop & Máy tính | SP00016   | 186              | 37.990.000    | 0               | Chiếc  |\n\nĐây là những sản phẩm có giá trị cao nhất trong kho của bạn.\nBạn có muốn tôi tìm kiếm sản phẩm theo tiêu chí khác không?",
+  "createdAt": {
+    "$date": "2026-04-29T01:01:39.751Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-29T01:01:39.751Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f1588a0362fce1f94b8adc"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "user",
+  "content": "sản phẩm có số lượng nhiều nhất",
+  "createdAt": {
+    "$date": "2026-04-29T01:02:02.620Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-29T01:02:02.620Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f1588a0362fce1f94b8ade"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "bot",
+  "content": "Dưới đây là danh sách 10 sản phẩm có số lượng tồn kho nhiều nhất trong kho của bạn:\n\n| Tên sản phẩm              | Danh mục          | SKU       | Số lượng tồn kho | Giá bán (VNĐ) | Số lượng đã bán | Đơn vị |\n| :------------------------ | :---------------- | :-------- | :--------------- | :------------ | :-------------- | :----- |\n| Túi tote vải canvas       | Túi xách & Balo   | SP00093   | 232              | 390.000       | 0               | Chiếc  |\n| Sữa tươi Vinamilk 100% 1L | Thực phẩm & Đồ uống | SP00095   | 220              | 36.000        | 0               | Hộp    |\n| Nike Air Max 90           | Giày thể thao     | SP00027   | 212              | 3.290.000     | 0               | Đôi    |\n| Dầu xả TRESemmé Salon     | Chăm sóc cá nhân  | SP00084   | 202              | 125.000       | 0               | Chai   |\n| Áo blazer nam một hàng nút | Áo nam            | SP00050   | 199              | 1.490.000     | 0               | Chiếc  |\n| Nike Pegasus 41           | Giày thể thao     | SP00031   | 198              | 3.090.000     | 0               | Đôi    |\n| Quần culottes nữ ống rộng | Quần nữ           | SP00069   | 197              | 599.000       | 0               | Chiếc  |\n| Áo sơ mi lụa nữ           | Áo nữ             | SP00055   | 192              | 399.000       | 0               | Chiếc  |\n| Dép xỏ ngón Havaianas Brasil | Dép & Sandal      | SP00043   | 192              | 450.000       | 0               | Đôi    |\n| Áo Polo Pique Classic Fit | Áo nam            | SP00046   | 191              | 1.890.000     | 0               | Chiếc  |\n\nĐây là những sản phẩm có số lượng tồn kho cao nhất trong hệ thống.",
+  "createdAt": {
+    "$date": "2026-04-29T01:02:02.621Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-29T01:02:02.621Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f158aa0362fce1f94b8ae2"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "user",
+  "content": "sản phẩm nhập kho lâu",
+  "createdAt": {
+    "$date": "2026-04-29T01:02:34.484Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-29T01:02:34.484Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f158aa0362fce1f94b8ae4"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "bot",
+  "content": "Tôi hiểu bạn muốn tìm các sản phẩm đã được nhập kho từ lâu, có thể là để xem xét việc luân chuyển hàng hóa hoặc đưa ra các chính sách khuyến mãi.\n\nTuy nhiên, trong các công cụ hiện có, tôi **không thể truy vấn trực tiếp thông tin về ngày nhập kho của từng sản phẩm cụ thể để xác định sản phẩm nào đã ở trong kho lâu nhất.**\n\nCác công cụ của tôi cho phép:\n*   Tìm thông tin tồn kho theo tên hoặc SKU.\n*   Lấy danh sách các phiếu nhập kho (nhưng không đi sâu vào ngày nhập của từng mặt hàng riêng lẻ trong phiếu đó).\n*   Lấy danh sách sản phẩm tồn kho nhiều nhất hoặc bán chạy nhất, nhưng không bao gồm tiêu chí \"nhập kho lâu\".\n\nĐể có được thông tin về sản phẩm đã nhập kho lâu, bạn thường cần một hệ thống quản lý kho (WMS) có chức năng theo dõi lịch sử nhập hàng chi tiết cho từng lô sản phẩm (ví dụ: theo dõi Lô/Batch hoặc Serial Number với ngày nhập cụ thể).\n\nBạn có muốn tôi giúp bạn tìm thông tin khác về tồn kho, phiếu nhập/xuất, hoặc các sản phẩm theo tiêu chí khác mà tôi có thể hỗ trợ không?",
+  "createdAt": {
+    "$date": "2026-04-29T01:02:34.485Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-29T01:02:34.485Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f15e9efbbdcf26149a5a63"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "user",
+  "content": "Tổng quan kho hàng?",
+  "createdAt": {
+    "$date": "2026-04-29T01:27:58.669Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-29T01:27:58.669Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f15e9efbbdcf26149a5a65"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "bot",
+  "content": "Tổng quan kho hàng của bạn như sau:\n\n*   **Tổng số sản phẩm:** 85\n*   **Tổng số lượng tồn kho:** 8939\n*   **Tổng giá trị nhập kho:** 27,086,753,000 VND\n*   **Tổng giá trị bán ra dự kiến:** 36,168,266,000 VND\n*   **Lợi nhuận ước tính:** 9,081,513,000 VND\n*   **Số sản phẩm sắp hết hàng:** 3\n*   **Số sản phẩm hết hàng:** 0",
+  "createdAt": {
+    "$date": "2026-04-29T01:27:58.678Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-29T01:27:58.678Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f63a932c452c68d81a02e5"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "user",
+  "content": "Danh sách nhà cung cấp đang hoạt động?",
+  "createdAt": {
+    "$date": "2026-05-02T17:55:31.531Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T17:55:31.531Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f63a932c452c68d81a02e7"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "bot",
+  "content": "Dưới đây là danh sách các nhà cung cấp đang hoạt động:\n\n| Mã NCC | Tên nhà cung cấp               | Người liên hệ     | Số điện thoại    | Email                      | Địa chỉ                                  | Trạng thái        |\n|:--------|:---------------------------------|:-------------------|:-----------------|:---------------------------|:-----------------------------------------|:------------------|\n| NCC0001 | Công ty TNHH Samsung Vina      | Nguyễn Văn An     | 0901234567       | contact@samsungvina.vn     | 2 Hai Bà Trưng, Quận 1, TP.HCM           | active            |\n| NCC0002 | Apple Việt Nam                 | Trần Thị Bích     | 0912345678       | supply@applevn.com         | 123 Nguyễn Huệ, Quận 1, TP.HCM           | active            |\n| NCC0003 | Công ty CP Nike Việt Nam       | Lê Minh Tuấn      | 0923456789       | order@nikevn.com           | 456 Lê Lợi, Quận 1, TP.HCM               | active            |\n| NCC0004 | Adidas Distribution            | Phạm Hồng Đức     | 0934567890       | supply@adidas.vn           | 789 Trần Hưng Đạo, Quận 5, TP.HCM        | active            |\n| NCC0005 | Xiaomi Việt Nam                | Hoàng Thị Lan     | 0945678901       | wholesale@xiaomivn.com     | 321 Cách Mạng Tháng 8, Quận 10, TP.HCM   | active            |\n| NCC0006 | Công ty TNHH Unilever Việt Nam | Nguyễn Thanh Hà   | 0956789012       | b2b@unilevervn.com         | 156 Nguyễn Lương Bằng, Quận 7, TP.HCM    | active            |\n| NCC0007 | Tập đoàn Vinamilk              | Đặng Văn Phúc     | 0967890123       | order@vinamilk.com.vn      | 10 Tân Trào, Quận 7, TP.HCM              | active            |\n| NCC0008 | Công ty CP Thế Giới Di Động    | Lý Thị Mai        | 0978901234       | supply@tgdd.vn             | 128 Trần Quang Khải, Quận 1, TP.HCM      | active            |\n| NCC0009 | ZARA Fashion Việt Nam          | Vũ Hoàng Nam      | 0989012345       | wholesale@zaravn.com       | 92 Nam Kỳ Khởi Nghĩa, Quận 1, TP.HCM     | active            |\n| NCC0010 | Logitech Distribution VN       | Trương Minh Khôi  | 0990123456       | partner@logitechvn.com     | 45 Pasteur, Quận 3, TP.HCM               | active            |",
+  "createdAt": {
+    "$date": "2026-05-02T17:55:31.562Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T17:55:31.562Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f63ac72c452c68d81a02eb"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "user",
+  "content": "tạo file excel các sản phẩm tồn kho",
+  "createdAt": {
+    "$date": "2026-05-02T17:56:23.643Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T17:56:23.643Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f63ac72c452c68d81a02ed"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "bot",
+  "content": "Tôi không thể tạo file Excel trực tiếp. Tuy nhiên, tôi có thể cung cấp danh sách các sản phẩm tồn kho. Bạn muốn tôi hiển thị những sản phẩm nào?",
+  "createdAt": {
+    "$date": "2026-05-02T17:56:23.646Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T17:56:23.646Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f63ad22c452c68d81a02f1"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "user",
+  "content": "tất cả",
+  "createdAt": {
+    "$date": "2026-05-02T17:56:34.882Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T17:56:34.882Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f63ad22c452c68d81a02f3"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "bot",
+  "content": "Hiện tại, tôi không có chức năng xuất toàn bộ danh sách sản phẩm tồn kho trong một lần. Tôi chỉ có thể truy vấn các sản phẩm theo tên, SKU, hoặc lọc theo trạng thái \"sắp hết hàng\" hoặc \"hết hàng\".\n\nBạn có muốn tôi liệt kê các sản phẩm:\n*   Sắp hết hàng?\n*   Đã hết hàng?\n*   Hoặc bạn muốn tìm kiếm sản phẩm cụ thể nào không?",
+  "createdAt": {
+    "$date": "2026-05-02T17:56:34.884Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T17:56:34.884Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f63ae62c452c68d81a02f9"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "user",
+  "content": "sắp hết hàng",
+  "createdAt": {
+    "$date": "2026-05-02T17:56:54.849Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T17:56:54.849Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f63ae62c452c68d81a02fb"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "bot",
+  "content": "Dưới đây là danh sách các sản phẩm sắp hết hàng:\n\n| Tên sản phẩm                       | SKU       | Danh mục   | Tồn kho | Đơn vị | Tồn kho tối thiểu |\n| :--------------------------------- | :-------- | :--------- | :------ | :----- | :---------------- |\n| Samsung Galaxy A55 5G              | SP00004   | Điện thoại | 12      | Chiếc  | 20                |\n| Realme GT 5 Pro                    | SP00011   | Điện thoại | 14      | Chiếc  | 20                |\n| Mascara Maybelline Lash Sensational | SP00077   | Mỹ phẩm    | 14      | Chiếc  | 18                |",
+  "createdAt": {
+    "$date": "2026-05-02T17:56:54.851Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T17:56:54.851Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f63ff22c452c68d81a0f57"
+  },
+  "userId": {
+    "$oid": "69d7c6680524a1cc91edc83a"
+  },
+  "sender": "user",
+  "content": "Tổng quan kho hàng?",
+  "createdAt": {
+    "$date": "2026-05-02T18:18:26.024Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T18:18:26.024Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f63ff22c452c68d81a0f59"
+  },
+  "userId": {
+    "$oid": "69d7c6680524a1cc91edc83a"
+  },
+  "sender": "bot",
+  "content": "Tổng quan kho hàng của bạn như sau:\n\n*   **Tổng số sản phẩm:** 85\n*   **Tổng số lượng tồn kho:** 8730\n*   **Tổng giá trị nhập kho:** 26.643.753.000 VNĐ\n*   **Tổng giá trị bán hàng (ước tính):** 35.644.076.000 VNĐ\n*   **Lợi nhuận ước tính:** 9.000.323.000 VNĐ\n*   **Số sản phẩm sắp hết hàng:** 3\n*   **Số sản phẩm hết hàng:** 0",
+  "createdAt": {
+    "$date": "2026-05-02T18:18:26.025Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T18:18:26.025Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69fac62d0dd99dd1f67edf1a"
+  },
+  "userId": {
+    "$oid": "69d7c6680524a1cc91edc83a"
+  },
+  "sender": "user",
+  "content": "Phiếu nhập hôm nay?",
+  "createdAt": {
+    "$date": "2026-05-06T04:40:13.802Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-06T04:40:13.802Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69fac62d0dd99dd1f67edf1c"
+  },
+  "userId": {
+    "$oid": "69d7c6680524a1cc91edc83a"
+  },
+  "sender": "bot",
+  "content": "Không có phiếu nhập kho nào trong hôm nay.",
+  "createdAt": {
+    "$date": "2026-05-06T04:40:13.805Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-06T04:40:13.805Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69fcc21ca545a5f923aeca74"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "user",
+  "content": "Tổng quan kho hàng?",
+  "createdAt": {
+    "$date": "2026-05-07T16:47:24.321Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-07T16:47:24.321Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69fcc21ca545a5f923aeca76"
+  },
+  "userId": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "sender": "bot",
+  "content": "Chào bạn, đây là tổng quan kho hàng hiện tại:\n\n*   **Tổng số sản phẩm:** 85\n*   **Tổng số lượng tồn kho:** 8589\n*   **Tổng giá trị nhập kho:** 25.713.753.000 VNĐ\n*   **Tổng giá trị bán ra dự kiến:** 34.444.486.000 VNĐ\n*   **Lợi nhuận ước tính:** 8.730.733.000 VNĐ\n*   **Số sản phẩm sắp hết hàng:** 4\n*   **Số sản phẩm hết hàng:** 0\n\nBạn có muốn xem chi tiết về các sản phẩm sắp hết hàng không?",
+  "createdAt": {
+    "$date": "2026-05-07T16:47:24.349Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-07T16:47:24.349Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,68 @@
+[{
+  "_id": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "fullName": "admin",
+  "email": "admin@gmail.com",
+  "password": "$2b$10$Hy.kswMrSQmzHCR9T8D7reqS/k8V.z84rngtxCE7G.5.z3HWTuoIO",
+  "phone": "0964047300",
+  "address": "",
+  "birthDay": {
+    "$date": "2004-12-15T17:00:00.000Z"
+  },
+  "role": "admin",
+  "isLocked": false,
+  "typeLogin": "email",
+  "avatar": "https://res.cloudinary.com/djh1ruskj/image/upload/v1776231367/ql-kho/avatars/tsvpj8zads1ztfh5qs6n.jpg",
+  "createdAt": {
+    "$date": "2026-04-04T15:38:52.404Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T05:47:11.119Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d134383ff7a3b9cceb62b9"
+  },
+  "fullName": "Tuanhkuoq",
+  "email": "anhk7539@gmail.com",
+  "password": "$2b$10$T0mHwmGe/gEdgIAlnFLY7uPUFTKRI.LeFZWyjP9yCV3I1kwObbR1i",
+  "phone": "",
+  "address": "",
+  "birthDay": null,
+  "role": "staff",
+  "isLocked": false,
+  "typeLogin": "email",
+  "avatar": "https://res.cloudinary.com/djh1ruskj/image/upload/v1776246634/ql-kho/avatars/qui8bmf3x9dgzvsj6dp1.jpg",
+  "createdAt": {
+    "$date": "2026-04-04T15:54:32.305Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-07T17:46:55.378Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7c6680524a1cc91edc83a"
+  },
+  "fullName": "Khương Công Tuấn Anh",
+  "email": "manager@gmail.com",
+  "password": "$2b$10$a5CWj/MD7Ae4llQrIYRrlO9/4Td.0ql1vBZdAv2u2sH/901Ddq/jy",
+  "phone": "",
+  "address": "",
+  "birthDay": null,
+  "role": "manager",
+  "isLocked": false,
+  "typeLogin": "email",
+  "avatar": "https://res.cloudinary.com/djh1ruskj/image/upload/v1776489161/ql-kho/avatars/fwzsocdank3kuouoivmg.jpg",
+  "createdAt": {
+    "$date": "2026-04-09T15:31:52.446Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-18T05:12:59.199Z"
+  },
+  "__v": 0
+}]

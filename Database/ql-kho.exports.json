@@ -1,0 +1,1150 @@
+[{
+  "_id": {
+    "$oid": "69d7bf1a0524a1cc91edc328"
+  },
+  "type": "sale",
+  "receiver": "Trần Tú Anh",
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7372"
+      },
+      "productName": "MacBook Air M3 15 inch",
+      "sku": "SP00013",
+      "quantity": 125,
+      "exportPrice": 34990000,
+      "totalPrice": 4373750000,
+      "_id": {
+        "$oid": "69d7bf1a0524a1cc91edc329"
+      }
+    }
+  ],
+  "totalAmount": 4373750000,
+  "totalItems": 125,
+  "status": "completed",
+  "note": "",
+  "createdAt": {
+    "$date": "2026-04-09T15:00:42.996Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T15:04:02.941Z"
+  },
+  "code": "PX00001",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69e3131dbf59d77e52aadc61"
+  },
+  "type": "damaged",
+  "receiver": "Trần Mạnh Cường",
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c746e"
+      },
+      "productName": "Nước suối Aquafina 500ml thùng 24 chai",
+      "sku": "SP00097",
+      "quantity": 100,
+      "exportPrice": 79000,
+      "totalPrice": 7900000,
+      "_id": {
+        "$oid": "69e3131dbf59d77e52aadc62"
+      }
+    }
+  ],
+  "totalAmount": 7900000,
+  "totalItems": 100,
+  "status": "completed",
+  "note": "",
+  "createdAt": {
+    "$date": "2026-04-18T05:14:05.158Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-18T05:14:05.158Z"
+  },
+  "code": "PX00002",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69e71cb5032f6defeace5de6"
+  },
+  "type": "sale",
+  "receiver": "Cao Cuong",
+  "items": [
+    {
+      "product": {
+        "$oid": "69e314e7bf59d77e52aadd70"
+      },
+      "productName": "iPhone 13 Pro Max",
+      "sku": "SP00088",
+      "quantity": 15,
+      "exportPrice": 16990000,
+      "totalPrice": 254850000,
+      "_id": {
+        "$oid": "69e71cb5032f6defeace5de7"
+      }
+    }
+  ],
+  "totalAmount": 254850000,
+  "totalItems": 15,
+  "status": "completed",
+  "note": "",
+  "createdAt": {
+    "$date": "2026-04-21T06:44:05.309Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-21T06:44:05.309Z"
+  },
+  "code": "PX00003",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69e71ced032f6defeace5e02"
+  },
+  "type": "return_supplier",
+  "receiver": "Apple Việt Nam",
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7369"
+      },
+      "productName": "iPhone 14 128GB",
+      "sku": "SP00010",
+      "quantity": 100,
+      "exportPrice": 17990000,
+      "totalPrice": 1799000000,
+      "_id": {
+        "$oid": "69e71ced032f6defeace5e03"
+      }
+    }
+  ],
+  "totalAmount": 1799000000,
+  "totalItems": 100,
+  "status": "completed",
+  "note": "",
+  "createdAt": {
+    "$date": "2026-04-21T06:45:01.746Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-21T06:45:01.746Z"
+  },
+  "code": "PX00004",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69e71d14032f6defeace5e1e"
+  },
+  "type": "sale",
+  "receiver": "Trần Minh Chiến",
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7411"
+      },
+      "productName": "Váy midi xếp ly",
+      "sku": "SP00066",
+      "quantity": 50,
+      "exportPrice": 890000,
+      "totalPrice": 44500000,
+      "_id": {
+        "$oid": "69e71d14032f6defeace5e1f"
+      }
+    }
+  ],
+  "totalAmount": 44500000,
+  "totalItems": 50,
+  "status": "completed",
+  "note": "",
+  "createdAt": {
+    "$date": "2026-04-21T06:45:40.574Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-21T06:45:44.313Z"
+  },
+  "code": "PX00005",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69e71d66032f6defeace5ed1"
+  },
+  "type": "sale",
+  "receiver": "Trần Tú Anh",
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c746b"
+      },
+      "productName": "Cà phê G7 hòa tan 3in1 hộp 20 gói",
+      "sku": "SP00096",
+      "quantity": 100,
+      "exportPrice": 55000,
+      "totalPrice": 5500000,
+      "_id": {
+        "$oid": "69e71d66032f6defeace5ed2"
+      }
+    }
+  ],
+  "totalAmount": 5500000,
+  "totalItems": 100,
+  "status": "completed",
+  "note": "",
+  "createdAt": {
+    "$date": "2026-04-21T06:47:02.161Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-21T06:47:05.588Z"
+  },
+  "code": "PX00006",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69e71e1d032f6defeace605f"
+  },
+  "type": "sale",
+  "receiver": "Trần Minh Chiến",
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c73b7"
+      },
+      "productName": "Adidas Samba OG",
+      "sku": "SP00036",
+      "quantity": 20,
+      "exportPrice": 2490000,
+      "totalPrice": 49800000,
+      "_id": {
+        "$oid": "69e71e1d032f6defeace6060"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c73b4"
+      },
+      "productName": "Nike Dunk Low Retro",
+      "sku": "SP00035",
+      "quantity": 100,
+      "exportPrice": 2890000,
+      "totalPrice": 289000000,
+      "_id": {
+        "$oid": "69e71e1d032f6defeace6061"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7459"
+      },
+      "productName": "Túi xách nữ Charles & Keith",
+      "sku": "SP00090",
+      "quantity": 20,
+      "exportPrice": 1290000,
+      "totalPrice": 25800000,
+      "_id": {
+        "$oid": "69e71e1d032f6defeace6062"
+      }
+    }
+  ],
+  "totalAmount": 364600000,
+  "totalItems": 140,
+  "status": "completed",
+  "note": "",
+  "createdAt": {
+    "$date": "2026-04-21T06:50:05.003Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-21T06:50:05.003Z"
+  },
+  "code": "PX00007",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69e71e56032f6defeace60d6"
+  },
+  "type": "sale",
+  "receiver": "Cao Cuong",
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c73ab"
+      },
+      "productName": "New Balance 574",
+      "sku": "SP00032",
+      "quantity": 50,
+      "exportPrice": 2390000,
+      "totalPrice": 119500000,
+      "_id": {
+        "$oid": "69e71e56032f6defeace60d7"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7357"
+      },
+      "productName": "Samsung Galaxy A55 5G",
+      "sku": "SP00004",
+      "quantity": 4,
+      "exportPrice": 9990000,
+      "totalPrice": 39960000,
+      "_id": {
+        "$oid": "69e71e56032f6defeace60d8"
+      }
+    }
+  ],
+  "totalAmount": 159460000,
+  "totalItems": 54,
+  "status": "completed",
+  "note": "",
+  "createdAt": {
+    "$date": "2026-04-21T06:51:02.372Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-21T06:51:05.450Z"
+  },
+  "code": "PX00008",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee7c0a1aabbefd3785b348"
+  },
+  "type": "sale",
+  "receiver": "Trần Tú Anh",
+  "items": [
+    {
+      "product": {
+        "$oid": "69e314e7bf59d77e52aadd70"
+      },
+      "productName": "iPhone 13 Pro Max",
+      "sku": "SP00088",
+      "quantity": 21,
+      "exportPrice": 16990000,
+      "totalPrice": 356790000,
+      "_id": {
+        "$oid": "69ee7c0a1aabbefd3785b349"
+      }
+    }
+  ],
+  "totalAmount": 356790000,
+  "totalItems": 21,
+  "status": "completed",
+  "note": "",
+  "exportDate": {
+    "$date": "2026-03-17T17:00:00.000Z"
+  },
+  "createdBy": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "createdAt": {
+    "$date": "2026-04-26T20:56:42.935Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T20:56:46.427Z"
+  },
+  "code": "PX00009",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee7e961aabbefd3785b9dd"
+  },
+  "type": "sale",
+  "receiver": "Trần Mạnh Cường",
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7474"
+      },
+      "productName": "Bánh Oreo kem Socola 133g",
+      "sku": "SP00099",
+      "quantity": 100,
+      "exportPrice": 29000,
+      "totalPrice": 2900000,
+      "_id": {
+        "$oid": "69ee7e961aabbefd3785b9de"
+      }
+    }
+  ],
+  "totalAmount": 2900000,
+  "totalItems": 100,
+  "status": "completed",
+  "note": "",
+  "exportDate": {
+    "$date": "2026-04-09T17:00:00.000Z"
+  },
+  "createdBy": {
+    "$oid": "69d7c6680524a1cc91edc83a"
+  },
+  "createdAt": {
+    "$date": "2026-04-26T21:07:34.577Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:07:34.577Z"
+  },
+  "code": "PX00010",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f63b952c452c68d81a04a6"
+  },
+  "type": "transfer",
+  "receiver": "Trần Tú Anh",
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7474"
+      },
+      "productName": "Bánh Oreo kem Socola 133g",
+      "sku": "SP00099",
+      "quantity": 50,
+      "exportPrice": 29000,
+      "totalPrice": 1450000,
+      "_id": {
+        "$oid": "69f63b952c452c68d81a04a7"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c746e"
+      },
+      "productName": "Nước suối Aquafina 500ml thùng 24 chai",
+      "sku": "SP00097",
+      "quantity": 20,
+      "exportPrice": 79000,
+      "totalPrice": 1580000,
+      "_id": {
+        "$oid": "69f63b952c452c68d81a04a8"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c746b"
+      },
+      "productName": "Cà phê G7 hòa tan 3in1 hộp 20 gói",
+      "sku": "SP00096",
+      "quantity": 10,
+      "exportPrice": 55000,
+      "totalPrice": 550000,
+      "_id": {
+        "$oid": "69f63b952c452c68d81a04a9"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7468"
+      },
+      "productName": "Sữa tươi Vinamilk 100% 1L",
+      "sku": "SP00095",
+      "quantity": 150,
+      "exportPrice": 36000,
+      "totalPrice": 5400000,
+      "_id": {
+        "$oid": "69f63b952c452c68d81a04aa"
+      }
+    }
+  ],
+  "totalAmount": 8980000,
+  "totalItems": 230,
+  "status": "completed",
+  "note": "",
+  "exportDate": {
+    "$date": "2026-04-30T17:00:00.000Z"
+  },
+  "createdBy": {
+    "$oid": "69d134383ff7a3b9cceb62b9"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T17:59:49.884Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T17:59:52.724Z"
+  },
+  "code": "PX00011",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f63bc92c452c68d81a0599"
+  },
+  "type": "sale",
+  "receiver": "Apple Việt Nam",
+  "items": [
+    {
+      "product": {
+        "$oid": "69e314e7bf59d77e52aadd70"
+      },
+      "productName": "iPhone 13 Pro Max",
+      "sku": "SP00088",
+      "quantity": 20,
+      "exportPrice": 16990000,
+      "totalPrice": 339800000,
+      "_id": {
+        "$oid": "69f63bc92c452c68d81a059a"
+      }
+    }
+  ],
+  "totalAmount": 339800000,
+  "totalItems": 20,
+  "status": "completed",
+  "note": "",
+  "exportDate": {
+    "$date": "2026-04-30T17:00:00.000Z"
+  },
+  "createdBy": {
+    "$oid": "69d134383ff7a3b9cceb62b9"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T18:00:41.717Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T18:00:41.717Z"
+  },
+  "code": "PX00012",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f63d822c452c68d81a0826"
+  },
+  "type": "sale",
+  "receiver": "Trần Mạnh Cường",
+  "items": [
+    {
+      "product": {
+        "$oid": "69e314e7bf59d77e52aadd70"
+      },
+      "productName": "iPhone 13 Pro Max",
+      "sku": "SP00088",
+      "quantity": 20,
+      "exportPrice": 16990000,
+      "totalPrice": 339800000,
+      "_id": {
+        "$oid": "69f63d822c452c68d81a0827"
+      }
+    }
+  ],
+  "totalAmount": 339800000,
+  "totalItems": 20,
+  "status": "completed",
+  "note": "",
+  "exportDate": {
+    "$date": "2026-05-02T17:00:00.000Z"
+  },
+  "createdBy": {
+    "$oid": "69d134383ff7a3b9cceb62b9"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T18:08:02.189Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T18:08:02.189Z"
+  },
+  "code": "PX00013",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f63db22c452c68d81a089e"
+  },
+  "type": "sale",
+  "receiver": "Cao Cuong",
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c73ab"
+      },
+      "productName": "New Balance 574",
+      "sku": "SP00032",
+      "quantity": 20,
+      "exportPrice": 2390000,
+      "totalPrice": 47800000,
+      "_id": {
+        "$oid": "69f63db22c452c68d81a089f"
+      }
+    }
+  ],
+  "totalAmount": 47800000,
+  "totalItems": 20,
+  "status": "completed",
+  "note": "",
+  "exportDate": {
+    "$date": "2026-04-30T17:00:00.000Z"
+  },
+  "createdBy": {
+    "$oid": "69d134383ff7a3b9cceb62b9"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T18:08:50.126Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T18:08:53.649Z"
+  },
+  "code": "PX00014",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f63e992c452c68d81a0b0f"
+  },
+  "type": "sale",
+  "receiver": "Chiến",
+  "items": [
+    {
+      "product": {
+        "$oid": "69e314e7bf59d77e52aadd70"
+      },
+      "productName": "iPhone 13 Pro Max",
+      "sku": "SP00088",
+      "quantity": 20,
+      "exportPrice": 16990000,
+      "totalPrice": 339800000,
+      "_id": {
+        "$oid": "69f63e992c452c68d81a0b10"
+      }
+    }
+  ],
+  "totalAmount": 339800000,
+  "totalItems": 20,
+  "status": "completed",
+  "note": "",
+  "exportDate": {
+    "$date": "2026-05-02T17:00:00.000Z"
+  },
+  "createdBy": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T18:12:41.009Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T18:12:43.018Z"
+  },
+  "code": "PX00015",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f63edd2c452c68d81a0be3"
+  },
+  "type": "sale",
+  "receiver": "Chiến",
+  "items": [
+    {
+      "product": {
+        "$oid": "69e314e7bf59d77e52aadd70"
+      },
+      "productName": "iPhone 13 Pro Max",
+      "sku": "SP00088",
+      "quantity": 20,
+      "exportPrice": 16990000,
+      "totalPrice": 339800000,
+      "_id": {
+        "$oid": "69f63edd2c452c68d81a0be4"
+      }
+    }
+  ],
+  "totalAmount": 339800000,
+  "totalItems": 20,
+  "status": "completed",
+  "note": "",
+  "exportDate": {
+    "$date": "2026-05-02T17:00:00.000Z"
+  },
+  "createdBy": {
+    "$oid": "69d134383ff7a3b9cceb62b9"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T18:13:49.660Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T18:14:20.916Z"
+  },
+  "code": "PX00016",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f63f5c2c452c68d81a0deb"
+  },
+  "type": "sale",
+  "receiver": "Loan",
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7351"
+      },
+      "productName": "iPhone 15 128GB",
+      "sku": "SP00002",
+      "quantity": 20,
+      "exportPrice": 22990000,
+      "totalPrice": 459800000,
+      "_id": {
+        "$oid": "69f63f5c2c452c68d81a0dec"
+      }
+    }
+  ],
+  "totalAmount": 459800000,
+  "totalItems": 20,
+  "status": "completed",
+  "note": "",
+  "exportDate": {
+    "$date": "2026-04-30T17:00:00.000Z"
+  },
+  "createdBy": {
+    "$oid": "69d7c6680524a1cc91edc83a"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T18:15:56.678Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T18:16:12.351Z"
+  },
+  "code": "PX00017",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f63f912c452c68d81a0ed7"
+  },
+  "type": "sale",
+  "receiver": "Ngọc",
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7351"
+      },
+      "productName": "iPhone 15 128GB",
+      "sku": "SP00002",
+      "quantity": 20,
+      "exportPrice": 22990000,
+      "totalPrice": 459800000,
+      "_id": {
+        "$oid": "69f63f912c452c68d81a0ed8"
+      }
+    }
+  ],
+  "totalAmount": 459800000,
+  "totalItems": 20,
+  "status": "completed",
+  "note": "",
+  "exportDate": {
+    "$date": "2026-05-02T17:00:00.000Z"
+  },
+  "createdBy": {
+    "$oid": "69d7c6680524a1cc91edc83a"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T18:16:49.449Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T18:16:49.449Z"
+  },
+  "code": "PX00018",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f640132c452c68d81a0fb9"
+  },
+  "type": "sale",
+  "receiver": "Ngọc",
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7369"
+      },
+      "productName": "iPhone 14 128GB",
+      "sku": "SP00010",
+      "quantity": 20,
+      "exportPrice": 17990000,
+      "totalPrice": 359800000,
+      "_id": {
+        "$oid": "69f640132c452c68d81a0fba"
+      }
+    }
+  ],
+  "totalAmount": 359800000,
+  "totalItems": 20,
+  "status": "cancelled",
+  "note": "",
+  "exportDate": {
+    "$date": "2026-04-30T17:00:00.000Z"
+  },
+  "createdBy": {
+    "$oid": "69d7c6680524a1cc91edc83a"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T18:18:59.749Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T18:19:02.136Z"
+  },
+  "code": "PX00019",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f640342c452c68d81a1047"
+  },
+  "type": "sale",
+  "receiver": "Ngọc",
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7369"
+      },
+      "productName": "iPhone 14 128GB",
+      "sku": "SP00010",
+      "quantity": 20,
+      "exportPrice": 17990000,
+      "totalPrice": 359800000,
+      "_id": {
+        "$oid": "69f640342c452c68d81a1048"
+      }
+    }
+  ],
+  "totalAmount": 359800000,
+  "totalItems": 20,
+  "status": "completed",
+  "note": "",
+  "exportDate": {
+    "$date": "2026-04-30T17:00:00.000Z"
+  },
+  "createdBy": {
+    "$oid": "69d7c6680524a1cc91edc83a"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T18:19:32.306Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T18:19:48.336Z"
+  },
+  "code": "PX00020",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f6406f2c452c68d81a1175"
+  },
+  "type": "sale",
+  "receiver": "Trần Tú Anh",
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7351"
+      },
+      "productName": "iPhone 15 128GB",
+      "sku": "SP00002",
+      "quantity": 9,
+      "exportPrice": 22990000,
+      "totalPrice": 206910000,
+      "_id": {
+        "$oid": "69f6406f2c452c68d81a1176"
+      }
+    }
+  ],
+  "totalAmount": 206910000,
+  "totalItems": 9,
+  "status": "completed",
+  "note": "",
+  "exportDate": {
+    "$date": "2026-05-02T17:00:00.000Z"
+  },
+  "createdBy": {
+    "$oid": "69d7c6680524a1cc91edc83a"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T18:20:32.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T18:20:50.697Z"
+  },
+  "code": "PX00021",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f640aa2c452c68d81a1285"
+  },
+  "type": "sale",
+  "receiver": "Trần Tú Anh",
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7372"
+      },
+      "productName": "MacBook Air M3 15 inch",
+      "sku": "SP00013",
+      "quantity": 10,
+      "exportPrice": 34990000,
+      "totalPrice": 349900000,
+      "_id": {
+        "$oid": "69f640aa2c452c68d81a1286"
+      }
+    }
+  ],
+  "totalAmount": 349900000,
+  "totalItems": 10,
+  "status": "completed",
+  "note": "",
+  "exportDate": {
+    "$date": "2026-05-02T17:00:00.000Z"
+  },
+  "createdBy": {
+    "$oid": "69d7c6680524a1cc91edc83a"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T18:21:30.596Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T18:21:40.183Z"
+  },
+  "code": "PX00022",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f640d32c452c68d81a1371"
+  },
+  "type": "sale",
+  "receiver": "Trần Mạnh Cường",
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7372"
+      },
+      "productName": "MacBook Air M3 15 inch",
+      "sku": "SP00013",
+      "quantity": 10,
+      "exportPrice": 34990000,
+      "totalPrice": 349900000,
+      "_id": {
+        "$oid": "69f640d32c452c68d81a1372"
+      }
+    }
+  ],
+  "totalAmount": 349900000,
+  "totalItems": 10,
+  "status": "completed",
+  "note": "",
+  "exportDate": {
+    "$date": "2026-04-30T17:00:00.000Z"
+  },
+  "createdBy": {
+    "$oid": "69d7c6680524a1cc91edc83a"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T18:22:11.234Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T18:22:36.015Z"
+  },
+  "code": "PX00023",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f641182c452c68d81a148c"
+  },
+  "type": "sale",
+  "receiver": "Cao Cuong",
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7375"
+      },
+      "productName": "MacBook Pro M3 Pro 14 inch",
+      "sku": "SP00014",
+      "quantity": 10,
+      "exportPrice": 49990000,
+      "totalPrice": 499900000,
+      "_id": {
+        "$oid": "69f641182c452c68d81a148d"
+      }
+    }
+  ],
+  "totalAmount": 499900000,
+  "totalItems": 10,
+  "status": "completed",
+  "note": "",
+  "exportDate": {
+    "$date": "2026-05-02T17:00:00.000Z"
+  },
+  "createdBy": {
+    "$oid": "69d7c6680524a1cc91edc83a"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T18:23:20.102Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T18:23:35.348Z"
+  },
+  "code": "PX00024",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f641472c452c68d81a15ba"
+  },
+  "type": "sale",
+  "receiver": "Trần Mạnh Cường",
+  "items": [
+    {
+      "product": {
+        "$oid": "69e314e7bf59d77e52aadd70"
+      },
+      "productName": "iPhone 13 Pro Max",
+      "sku": "SP00088",
+      "quantity": 10,
+      "exportPrice": 16990000,
+      "totalPrice": 169900000,
+      "_id": {
+        "$oid": "69f641472c452c68d81a15bb"
+      }
+    }
+  ],
+  "totalAmount": 169900000,
+  "totalItems": 10,
+  "status": "completed",
+  "note": "",
+  "exportDate": {
+    "$date": "2026-05-02T17:00:00.000Z"
+  },
+  "createdBy": {
+    "$oid": "69d134383ff7a3b9cceb62b9"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T18:24:07.632Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T18:24:19.388Z"
+  },
+  "code": "PX00025",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f6424bb08fccfcd3815897"
+  },
+  "type": "sale",
+  "receiver": "Trần Tú Anh",
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7375"
+      },
+      "productName": "MacBook Pro M3 Pro 14 inch",
+      "sku": "SP00014",
+      "quantity": 20,
+      "exportPrice": 49990000,
+      "totalPrice": 999800000,
+      "_id": {
+        "$oid": "69f6424bb08fccfcd3815898"
+      }
+    }
+  ],
+  "totalAmount": 999800000,
+  "totalItems": 20,
+  "status": "completed",
+  "note": "",
+  "exportDate": {
+    "$date": "2026-05-02T17:00:00.000Z"
+  },
+  "createdBy": {
+    "$oid": "69d134383ff7a3b9cceb62b9"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T18:28:27.858Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T18:28:40.792Z"
+  },
+  "code": "PX00026",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f643e1b08fccfcd3815a0f"
+  },
+  "type": "sale",
+  "receiver": "Trần Tú Anh",
+  "items": [
+    {
+      "product": {
+        "$oid": "69e314e7bf59d77e52aadd70"
+      },
+      "productName": "iPhone 13 Pro Max",
+      "sku": "SP00088",
+      "quantity": 2,
+      "exportPrice": 16990000,
+      "totalPrice": 33980000,
+      "_id": {
+        "$oid": "69f643e1b08fccfcd3815a10"
+      }
+    }
+  ],
+  "totalAmount": 33980000,
+  "totalItems": 2,
+  "status": "completed",
+  "note": "",
+  "exportDate": {
+    "$date": "2026-05-02T17:00:00.000Z"
+  },
+  "createdBy": {
+    "$oid": "69d134383ff7a3b9cceb62b9"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T18:35:13.993Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-06T04:38:04.455Z"
+  },
+  "code": "PX00027",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69fac69d0dd99dd1f67ee024"
+  },
+  "type": "sale",
+  "receiver": "Trần Tú Anh",
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7429"
+      },
+      "productName": "Kem dưỡng ẩm Laneige",
+      "sku": "SP00074",
+      "quantity": 100,
+      "exportPrice": 690000,
+      "totalPrice": 69000000,
+      "_id": {
+        "$oid": "69fac69d0dd99dd1f67ee025"
+      }
+    }
+  ],
+  "totalAmount": 69000000,
+  "totalItems": 100,
+  "status": "completed",
+  "note": "",
+  "exportDate": {
+    "$date": "2026-05-06T04:41:00.000Z"
+  },
+  "createdBy": {
+    "$oid": "69d7c6680524a1cc91edc83a"
+  },
+  "createdAt": {
+    "$date": "2026-05-06T04:42:05.782Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-06T04:42:05.782Z"
+  },
+  "code": "PX00028",
+  "__v": 0
+}]

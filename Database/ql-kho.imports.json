@@ -1,0 +1,1466 @@
+[{
+  "_id": {
+    "$oid": "69d133ad3ff7a3b9cceb61fc"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7326"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "69d133713ff7a3b9cceb61aa"
+      },
+      "productName": "iPhone 15 ProMax",
+      "sku": "SP00101",
+      "quantity": 20,
+      "importPrice": 30000000,
+      "totalPrice": 600000000,
+      "_id": {
+        "$oid": "69d133ad3ff7a3b9cceb61fd"
+      }
+    }
+  ],
+  "totalAmount": 600000000,
+  "totalItems": 20,
+  "status": "completed",
+  "note": "",
+  "createdAt": {
+    "$date": "2026-04-04T15:52:13.354Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-04T15:52:13.354Z"
+  },
+  "code": "PN00001",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69e0e5a905e719b0a917c77f"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7326"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7369"
+      },
+      "productName": "iPhone 14 128GB",
+      "sku": "SP00010",
+      "quantity": 5,
+      "importPrice": 14000000,
+      "totalPrice": 70000000,
+      "_id": {
+        "$oid": "69e0e5a905e719b0a917c780"
+      }
+    }
+  ],
+  "totalAmount": 70000000,
+  "totalItems": 5,
+  "status": "completed",
+  "note": "",
+  "createdAt": {
+    "$date": "2026-04-16T13:35:37.803Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-16T13:35:51.009Z"
+  },
+  "code": "PN00002",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69e0e79305e719b0a917ca68"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7344"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7474"
+      },
+      "productName": "Bánh Oreo kem Socola 133g",
+      "sku": "SP00099",
+      "quantity": 10,
+      "importPrice": 18000,
+      "totalPrice": 180000,
+      "_id": {
+        "$oid": "69e0e79305e719b0a917ca69"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c746e"
+      },
+      "productName": "Nước suối Aquafina 500ml thùng 24 chai",
+      "sku": "SP00097",
+      "quantity": 1,
+      "importPrice": 50000,
+      "totalPrice": 50000,
+      "_id": {
+        "$oid": "69e0e79305e719b0a917ca6a"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c746b"
+      },
+      "productName": "Cà phê G7 hòa tan 3in1 hộp 20 gói",
+      "sku": "SP00096",
+      "quantity": 20,
+      "importPrice": 35000,
+      "totalPrice": 700000,
+      "_id": {
+        "$oid": "69e0e79305e719b0a917ca6b"
+      }
+    }
+  ],
+  "totalAmount": 930000,
+  "totalItems": 31,
+  "status": "completed",
+  "note": "",
+  "createdAt": {
+    "$date": "2026-04-16T13:43:47.233Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-16T13:44:00.147Z"
+  },
+  "code": "PN00003",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69e318c2bf59d77e52aae264"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7335"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7399"
+      },
+      "productName": "Pin dự phòng Anker 20000mAh",
+      "sku": "SP00026",
+      "quantity": 20,
+      "importPrice": 600000,
+      "totalPrice": 12000000,
+      "_id": {
+        "$oid": "69e318c2bf59d77e52aae265"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7375"
+      },
+      "productName": "MacBook Pro M3 Pro 14 inch",
+      "sku": "SP00014",
+      "quantity": 2,
+      "importPrice": 40000000,
+      "totalPrice": 80000000,
+      "_id": {
+        "$oid": "69e318c2bf59d77e52aae266"
+      }
+    }
+  ],
+  "totalAmount": 92000000,
+  "totalItems": 22,
+  "status": "completed",
+  "importDate": {
+    "$date": "2026-04-17T17:00:00.000Z"
+  },
+  "note": "",
+  "createdAt": {
+    "$date": "2026-04-18T05:38:10.954Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-18T05:38:21.057Z"
+  },
+  "code": "PN00004",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69e71c7b032f6defeace5d82"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7326"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "69e314e7bf59d77e52aadd70"
+      },
+      "productName": "iPhone 13 Pro Max",
+      "sku": "SP00088",
+      "quantity": 10,
+      "importPrice": 14000000,
+      "totalPrice": 140000000,
+      "_id": {
+        "$oid": "69e71c7c032f6defeace5d83"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c746b"
+      },
+      "productName": "Cà phê G7 hòa tan 3in1 hộp 20 gói",
+      "sku": "SP00096",
+      "quantity": 20,
+      "importPrice": 35000,
+      "totalPrice": 700000,
+      "_id": {
+        "$oid": "69e71c7c032f6defeace5d84"
+      }
+    }
+  ],
+  "totalAmount": 140700000,
+  "totalItems": 30,
+  "status": "completed",
+  "importDate": null,
+  "note": "",
+  "createdAt": {
+    "$date": "2026-04-21T06:43:08.013Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-21T06:43:12.072Z"
+  },
+  "code": "PN00005",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69e71dc4032f6defeace5fc3"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c733f"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7468"
+      },
+      "productName": "Sữa tươi Vinamilk 100% 1L",
+      "sku": "SP00095",
+      "quantity": 100,
+      "importPrice": 25000,
+      "totalPrice": 2500000,
+      "_id": {
+        "$oid": "69e71dc4032f6defeace5fc4"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7471"
+      },
+      "productName": "Trà sữa Nestea 255ml lốc 6 lon",
+      "sku": "SP00098",
+      "quantity": 20,
+      "importPrice": 30000,
+      "totalPrice": 600000,
+      "_id": {
+        "$oid": "69e71dc4032f6defeace5fc5"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7426"
+      },
+      "productName": "Serum Vitamin C Klairs",
+      "sku": "SP00073",
+      "quantity": 20,
+      "importPrice": 250000,
+      "totalPrice": 5000000,
+      "_id": {
+        "$oid": "69e71dc4032f6defeace5fc6"
+      }
+    }
+  ],
+  "totalAmount": 8100000,
+  "totalItems": 140,
+  "status": "completed",
+  "importDate": {
+    "$date": "2026-04-20T17:00:00.000Z"
+  },
+  "note": "",
+  "createdAt": {
+    "$date": "2026-04-21T06:48:36.644Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-21T06:48:40.286Z"
+  },
+  "code": "PN00006",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69e7225a032f6defeace66b5"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c732c"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c73c6"
+      },
+      "productName": "Dép Nike Benassi JDI",
+      "sku": "SP00041",
+      "quantity": 10,
+      "importPrice": 400000,
+      "totalPrice": 4000000,
+      "_id": {
+        "$oid": "69e7225a032f6defeace66b6"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c73b4"
+      },
+      "productName": "Nike Dunk Low Retro",
+      "sku": "SP00035",
+      "quantity": 30,
+      "importPrice": 2000000,
+      "totalPrice": 60000000,
+      "_id": {
+        "$oid": "69e7225a032f6defeace66b7"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c739f"
+      },
+      "productName": "Nike Air Force 1 Low White",
+      "sku": "SP00028",
+      "quantity": 50,
+      "importPrice": 1800000,
+      "totalPrice": 90000000,
+      "_id": {
+        "$oid": "69e7225a032f6defeace66b8"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c739c"
+      },
+      "productName": "Nike Air Max 90",
+      "sku": "SP00027",
+      "quantity": 20,
+      "importPrice": 2200000,
+      "totalPrice": 44000000,
+      "_id": {
+        "$oid": "69e7225a032f6defeace66b9"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c73a8"
+      },
+      "productName": "Nike Pegasus 41",
+      "sku": "SP00031",
+      "quantity": 10,
+      "importPrice": 2000000,
+      "totalPrice": 20000000,
+      "_id": {
+        "$oid": "69e7225a032f6defeace66ba"
+      }
+    }
+  ],
+  "totalAmount": 218000000,
+  "totalItems": 120,
+  "status": "completed",
+  "importDate": {
+    "$date": "2026-04-20T17:00:00.000Z"
+  },
+  "note": "",
+  "createdAt": {
+    "$date": "2026-04-21T07:08:10.074Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-21T07:08:10.074Z"
+  },
+  "code": "PN00007",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69e723b8032f6defeace6888"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c734b"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c73d5"
+      },
+      "productName": "Áo Polo Pique Classic Fit",
+      "sku": "SP00046",
+      "quantity": 2,
+      "importPrice": 1200000,
+      "totalPrice": 2400000,
+      "_id": {
+        "$oid": "69e723b8032f6defeace6889"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69e314e7bf59d77e52aadd70"
+      },
+      "productName": "iPhone 13 Pro Max",
+      "sku": "SP00088",
+      "quantity": 2,
+      "importPrice": 14000000,
+      "totalPrice": 28000000,
+      "_id": {
+        "$oid": "69e723b8032f6defeace688a"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7474"
+      },
+      "productName": "Bánh Oreo kem Socola 133g",
+      "sku": "SP00099",
+      "quantity": 12,
+      "importPrice": 18000,
+      "totalPrice": 216000,
+      "_id": {
+        "$oid": "69e723b8032f6defeace688b"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7471"
+      },
+      "productName": "Trà sữa Nestea 255ml lốc 6 lon",
+      "sku": "SP00098",
+      "quantity": 12,
+      "importPrice": 30000,
+      "totalPrice": 360000,
+      "_id": {
+        "$oid": "69e723b8032f6defeace688c"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c746e"
+      },
+      "productName": "Nước suối Aquafina 500ml thùng 24 chai",
+      "sku": "SP00097",
+      "quantity": 55,
+      "importPrice": 50000,
+      "totalPrice": 2750000,
+      "_id": {
+        "$oid": "69e723b8032f6defeace688d"
+      }
+    }
+  ],
+  "totalAmount": 33726000,
+  "totalItems": 83,
+  "status": "completed",
+  "importDate": {
+    "$date": "2026-03-10T17:00:00.000Z"
+  },
+  "note": "",
+  "createdAt": {
+    "$date": "2026-04-21T07:14:00.092Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-21T07:14:04.696Z"
+  },
+  "code": "PN00008",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69e7241a032f6defeace69ae"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c734b"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7474"
+      },
+      "productName": "Bánh Oreo kem Socola 133g",
+      "sku": "SP00099",
+      "quantity": 12,
+      "importPrice": 18000,
+      "totalPrice": 216000,
+      "_id": {
+        "$oid": "69e7241a032f6defeace69af"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c746b"
+      },
+      "productName": "Cà phê G7 hòa tan 3in1 hộp 20 gói",
+      "sku": "SP00096",
+      "quantity": 7,
+      "importPrice": 35000,
+      "totalPrice": 245000,
+      "_id": {
+        "$oid": "69e7241a032f6defeace69b0"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c746e"
+      },
+      "productName": "Nước suối Aquafina 500ml thùng 24 chai",
+      "sku": "SP00097",
+      "quantity": 6,
+      "importPrice": 50000,
+      "totalPrice": 300000,
+      "_id": {
+        "$oid": "69e7241a032f6defeace69b1"
+      }
+    }
+  ],
+  "totalAmount": 761000,
+  "totalItems": 25,
+  "status": "completed",
+  "importDate": {
+    "$date": "2026-02-10T17:00:00.000Z"
+  },
+  "note": "",
+  "createdAt": {
+    "$date": "2026-04-21T07:15:38.586Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-21T07:15:43.042Z"
+  },
+  "code": "PN00009",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69e8638aac277179ace0d841"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c734b"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7351"
+      },
+      "productName": "iPhone 15 128GB",
+      "sku": "SP00002",
+      "quantity": 2,
+      "importPrice": 18000000,
+      "totalPrice": 36000000,
+      "_id": {
+        "$oid": "69e8638aac277179ace0d842"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7354"
+      },
+      "productName": "Samsung Galaxy S24 Ultra 512GB",
+      "sku": "SP00003",
+      "quantity": 2,
+      "importPrice": 27000000,
+      "totalPrice": 54000000,
+      "_id": {
+        "$oid": "69e8638aac277179ace0d843"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c73ff"
+      },
+      "productName": "Quần kaki nam Regular",
+      "sku": "SP00060",
+      "quantity": 1,
+      "importPrice": 300000,
+      "totalPrice": 300000,
+      "_id": {
+        "$oid": "69e8638aac277179ace0d844"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7357"
+      },
+      "productName": "Samsung Galaxy A55 5G",
+      "sku": "SP00004",
+      "quantity": 2,
+      "importPrice": 7500000,
+      "totalPrice": 15000000,
+      "_id": {
+        "$oid": "69e8638aac277179ace0d845"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c735a"
+      },
+      "productName": "Xiaomi 14 Ultra",
+      "sku": "SP00005",
+      "quantity": 12,
+      "importPrice": 20000000,
+      "totalPrice": 240000000,
+      "_id": {
+        "$oid": "69e8638aac277179ace0d846"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c735d"
+      },
+      "productName": "Xiaomi Redmi Note 13 Pro",
+      "sku": "SP00006",
+      "quantity": 1,
+      "importPrice": 5500000,
+      "totalPrice": 5500000,
+      "_id": {
+        "$oid": "69e8638aac277179ace0d847"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7360"
+      },
+      "productName": "OPPO Find X7 Ultra",
+      "sku": "SP00007",
+      "quantity": 12,
+      "importPrice": 19000000,
+      "totalPrice": 228000000,
+      "_id": {
+        "$oid": "69e8638aac277179ace0d848"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7474"
+      },
+      "productName": "Bánh Oreo kem Socola 133g",
+      "sku": "SP00099",
+      "quantity": 123,
+      "importPrice": 18000,
+      "totalPrice": 2214000,
+      "_id": {
+        "$oid": "69e8638aac277179ace0d849"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69e314e7bf59d77e52aadd70"
+      },
+      "productName": "iPhone 13 Pro Max",
+      "sku": "SP00088",
+      "quantity": 2,
+      "importPrice": 14000000,
+      "totalPrice": 28000000,
+      "_id": {
+        "$oid": "69e8638aac277179ace0d84a"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7471"
+      },
+      "productName": "Trà sữa Nestea 255ml lốc 6 lon",
+      "sku": "SP00098",
+      "quantity": 1,
+      "importPrice": 30000,
+      "totalPrice": 30000,
+      "_id": {
+        "$oid": "69e8638aac277179ace0d84b"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c746b"
+      },
+      "productName": "Cà phê G7 hòa tan 3in1 hộp 20 gói",
+      "sku": "SP00096",
+      "quantity": 2,
+      "importPrice": 35000,
+      "totalPrice": 70000,
+      "_id": {
+        "$oid": "69e8638aac277179ace0d84c"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7468"
+      },
+      "productName": "Sữa tươi Vinamilk 100% 1L",
+      "sku": "SP00095",
+      "quantity": 12,
+      "importPrice": 25000,
+      "totalPrice": 300000,
+      "_id": {
+        "$oid": "69e8638aac277179ace0d84d"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7462"
+      },
+      "productName": "Túi tote vải canvas",
+      "sku": "SP00093",
+      "quantity": 22,
+      "importPrice": 200000,
+      "totalPrice": 4400000,
+      "_id": {
+        "$oid": "69e8638aac277179ace0d84e"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c746e"
+      },
+      "productName": "Nước suối Aquafina 500ml thùng 24 chai",
+      "sku": "SP00097",
+      "quantity": 2,
+      "importPrice": 50000,
+      "totalPrice": 100000,
+      "_id": {
+        "$oid": "69e8638aac277179ace0d84f"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7447"
+      },
+      "productName": "Dầu xả TRESemmé Salon",
+      "sku": "SP00084",
+      "quantity": 2,
+      "importPrice": 70000,
+      "totalPrice": 140000,
+      "_id": {
+        "$oid": "69e8638aac277179ace0d850"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c742f"
+      },
+      "productName": "Cushion Maybelline Fit Me",
+      "sku": "SP00076",
+      "quantity": 2,
+      "importPrice": 150000,
+      "totalPrice": 300000,
+      "_id": {
+        "$oid": "69e8638aac277179ace0d851"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7444"
+      },
+      "productName": "Lăn khử mùi Nivea Men",
+      "sku": "SP00083",
+      "quantity": 12,
+      "importPrice": 40000,
+      "totalPrice": 480000,
+      "_id": {
+        "$oid": "69e8638aac277179ace0d852"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c741d"
+      },
+      "productName": "Quần short jean nữ cạp cao",
+      "sku": "SP00070",
+      "quantity": 1,
+      "importPrice": 250000,
+      "totalPrice": 250000,
+      "_id": {
+        "$oid": "69e8638aac277179ace0d853"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7423"
+      },
+      "productName": "Kem chống nắng Anessa",
+      "sku": "SP00072",
+      "quantity": 2,
+      "importPrice": 350000,
+      "totalPrice": 700000,
+      "_id": {
+        "$oid": "69e8638aac277179ace0d854"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c742c"
+      },
+      "productName": "Toner Hada Labo Gokujyun",
+      "sku": "SP00075",
+      "quantity": 12,
+      "importPrice": 180000,
+      "totalPrice": 2160000,
+      "_id": {
+        "$oid": "69e8638aac277179ace0d855"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c73e1"
+      },
+      "productName": "Áo blazer nam một hàng nút",
+      "sku": "SP00050",
+      "quantity": 12,
+      "importPrice": 800000,
+      "totalPrice": 9600000,
+      "_id": {
+        "$oid": "69e8638aac277179ace0d856"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7408"
+      },
+      "productName": "Quần tây Slim công sở",
+      "sku": "SP00063",
+      "quantity": 2,
+      "importPrice": 400000,
+      "totalPrice": 800000,
+      "_id": {
+        "$oid": "69e8638aac277179ace0d857"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c73db"
+      },
+      "productName": "Áo khoác hoodie basic",
+      "sku": "SP00048",
+      "quantity": 12,
+      "importPrice": 350000,
+      "totalPrice": 4200000,
+      "_id": {
+        "$oid": "69e8638aac277179ace0d858"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c73b1"
+      },
+      "productName": "Puma RS-X Reinvention",
+      "sku": "SP00034",
+      "quantity": 12,
+      "importPrice": 1800000,
+      "totalPrice": 21600000,
+      "_id": {
+        "$oid": "69e8638aac277179ace0d859"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c73f0"
+      },
+      "productName": "Áo sơ mi lụa nữ",
+      "sku": "SP00055",
+      "quantity": 11,
+      "importPrice": 200000,
+      "totalPrice": 2200000,
+      "_id": {
+        "$oid": "69e8638aac277179ace0d85a"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c736c"
+      },
+      "productName": "Realme GT 5 Pro",
+      "sku": "SP00011",
+      "quantity": 2,
+      "importPrice": 10000000,
+      "totalPrice": 20000000,
+      "_id": {
+        "$oid": "69e8638aac277179ace0d85b"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c738a"
+      },
+      "productName": "Logitech MX Master 3S",
+      "sku": "SP00021",
+      "quantity": 2,
+      "importPrice": 1800000,
+      "totalPrice": 3600000,
+      "_id": {
+        "$oid": "69e8638aac277179ace0d85c"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c741a"
+      },
+      "productName": "Quần culottes nữ ống rộng",
+      "sku": "SP00069",
+      "quantity": 12,
+      "importPrice": 350000,
+      "totalPrice": 4200000,
+      "_id": {
+        "$oid": "69e8638aac277179ace0d85d"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7363"
+      },
+      "productName": "OPPO Reno 11 5G",
+      "sku": "SP00008",
+      "quantity": 1,
+      "importPrice": 8000000,
+      "totalPrice": 8000000,
+      "_id": {
+        "$oid": "69e8638aac277179ace0d85e"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7366"
+      },
+      "productName": "Samsung Galaxy Z Fold 5",
+      "sku": "SP00009",
+      "quantity": 1,
+      "importPrice": 32000000,
+      "totalPrice": 32000000,
+      "_id": {
+        "$oid": "69e8638aac277179ace0d85f"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c736f"
+      },
+      "productName": "Vivo V30 5G",
+      "sku": "SP00012",
+      "quantity": 2,
+      "importPrice": 7000000,
+      "totalPrice": 14000000,
+      "_id": {
+        "$oid": "69e8638aac277179ace0d860"
+      }
+    }
+  ],
+  "totalAmount": 738144000,
+  "totalItems": 296,
+  "status": "completed",
+  "importDate": {
+    "$date": "2026-03-03T17:00:00.000Z"
+  },
+  "note": "",
+  "createdAt": {
+    "$date": "2026-04-22T05:58:34.541Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-22T05:58:34.541Z"
+  },
+  "code": "PN00010",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee7b911aabbefd3785b2e7"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7331"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c73b7"
+      },
+      "productName": "Adidas Samba OG",
+      "sku": "SP00036",
+      "quantity": 20,
+      "importPrice": 1700000,
+      "totalPrice": 34000000,
+      "_id": {
+        "$oid": "69ee7b911aabbefd3785b2e8"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c73a5"
+      },
+      "productName": "Adidas Stan Smith",
+      "sku": "SP00030",
+      "quantity": 20,
+      "importPrice": 1500000,
+      "totalPrice": 30000000,
+      "_id": {
+        "$oid": "69ee7b911aabbefd3785b2e9"
+      }
+    }
+  ],
+  "totalAmount": 64000000,
+  "totalItems": 40,
+  "status": "completed",
+  "importDate": {
+    "$date": "2026-03-12T17:00:00.000Z"
+  },
+  "note": "",
+  "createdBy": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "createdAt": {
+    "$date": "2026-04-26T20:54:41.232Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T20:54:41.232Z"
+  },
+  "code": "PN00011",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee7d7f1aabbefd3785b623"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7331"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c746e"
+      },
+      "productName": "Nước suối Aquafina 500ml thùng 24 chai",
+      "sku": "SP00097",
+      "quantity": 9,
+      "importPrice": 50000,
+      "totalPrice": 450000,
+      "_id": {
+        "$oid": "69ee7d7f1aabbefd3785b624"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7471"
+      },
+      "productName": "Trà sữa Nestea 255ml lốc 6 lon",
+      "sku": "SP00098",
+      "quantity": 1,
+      "importPrice": 30000,
+      "totalPrice": 30000,
+      "_id": {
+        "$oid": "69ee7d7f1aabbefd3785b625"
+      }
+    }
+  ],
+  "totalAmount": 480000,
+  "totalItems": 10,
+  "status": "completed",
+  "importDate": {
+    "$date": "2026-04-07T17:00:00.000Z"
+  },
+  "note": "",
+  "createdBy": {
+    "$oid": "69d134383ff7a3b9cceb62b9"
+  },
+  "createdAt": {
+    "$date": "2026-04-26T21:02:55.787Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:02:55.787Z"
+  },
+  "code": "PN00012",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ef4432030fdd7ef3b98ef5"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7331"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c73cc"
+      },
+      "productName": "Dép xỏ ngón Havaianas Brasil",
+      "sku": "SP00043",
+      "quantity": 10,
+      "importPrice": 250000,
+      "totalPrice": 2500000,
+      "_id": {
+        "$oid": "69ef4432030fdd7ef3b98ef6"
+      }
+    }
+  ],
+  "totalAmount": 2500000,
+  "totalItems": 10,
+  "status": "completed",
+  "importDate": {
+    "$date": "2026-03-09T17:00:00.000Z"
+  },
+  "note": "",
+  "createdBy": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "createdAt": {
+    "$date": "2026-04-27T11:10:42.326Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T11:10:42.326Z"
+  },
+  "code": "PN00013",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f156d80362fce1f94b8792"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7326"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "69e314e7bf59d77e52aadd70"
+      },
+      "productName": "iPhone 13 Pro Max",
+      "sku": "SP00088",
+      "quantity": 2,
+      "importPrice": 14000000,
+      "totalPrice": 28000000,
+      "_id": {
+        "$oid": "69f156d80362fce1f94b8793"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7351"
+      },
+      "productName": "iPhone 15 128GB",
+      "sku": "SP00002",
+      "quantity": 5,
+      "importPrice": 18000000,
+      "totalPrice": 90000000,
+      "_id": {
+        "$oid": "69f156d80362fce1f94b8794"
+      }
+    }
+  ],
+  "totalAmount": 118000000,
+  "totalItems": 7,
+  "status": "completed",
+  "importDate": {
+    "$date": "2026-03-10T17:00:00.000Z"
+  },
+  "note": "",
+  "createdBy": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "createdAt": {
+    "$date": "2026-04-29T00:54:48.374Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-29T00:54:48.374Z"
+  },
+  "code": "PN00014",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f63b422c452c68d81a0404"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7326"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7351"
+      },
+      "productName": "iPhone 15 128GB",
+      "sku": "SP00002",
+      "quantity": 12,
+      "importPrice": 18000000,
+      "totalPrice": 216000000,
+      "_id": {
+        "$oid": "69f63b422c452c68d81a0405"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7369"
+      },
+      "productName": "iPhone 14 128GB",
+      "sku": "SP00010",
+      "quantity": 20,
+      "importPrice": 14000000,
+      "totalPrice": 280000000,
+      "_id": {
+        "$oid": "69f63b422c452c68d81a0406"
+      }
+    }
+  ],
+  "totalAmount": 496000000,
+  "totalItems": 32,
+  "status": "completed",
+  "importDate": {
+    "$date": "2026-02-02T17:00:00.000Z"
+  },
+  "note": "",
+  "createdBy": {
+    "$oid": "69d134383ff7a3b9cceb62b9"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T17:58:26.747Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T17:58:30.980Z"
+  },
+  "code": "PN00015",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f63bec2c452c68d81a061a"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7326"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "69e314e7bf59d77e52aadd70"
+      },
+      "productName": "iPhone 13 Pro Max",
+      "sku": "SP00088",
+      "quantity": 19,
+      "importPrice": 14000000,
+      "totalPrice": 266000000,
+      "_id": {
+        "$oid": "69f63bec2c452c68d81a061b"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7351"
+      },
+      "productName": "iPhone 15 128GB",
+      "sku": "SP00002",
+      "quantity": 20,
+      "importPrice": 18000000,
+      "totalPrice": 360000000,
+      "_id": {
+        "$oid": "69f63bec2c452c68d81a061c"
+      }
+    }
+  ],
+  "totalAmount": 626000000,
+  "totalItems": 39,
+  "status": "completed",
+  "importDate": null,
+  "note": "",
+  "createdBy": {
+    "$oid": "69d134383ff7a3b9cceb62b9"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T18:01:16.925Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T18:01:19.803Z"
+  },
+  "code": "PN00016",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f63c2b2c452c68d81a06e6"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7348"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c73de"
+      },
+      "productName": "Áo thun thể thao Dri-FIT",
+      "sku": "SP00049",
+      "quantity": 50,
+      "importPrice": 500000,
+      "totalPrice": 25000000,
+      "_id": {
+        "$oid": "69f63c2b2c452c68d81a06e7"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7408"
+      },
+      "productName": "Quần tây Slim công sở",
+      "sku": "SP00063",
+      "quantity": 20,
+      "importPrice": 400000,
+      "totalPrice": 8000000,
+      "_id": {
+        "$oid": "69f63c2b2c452c68d81a06e8"
+      }
+    }
+  ],
+  "totalAmount": 33000000,
+  "totalItems": 70,
+  "status": "completed",
+  "importDate": {
+    "$date": "2026-04-30T17:00:00.000Z"
+  },
+  "note": "",
+  "createdBy": {
+    "$oid": "69d134383ff7a3b9cceb62b9"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T18:02:19.600Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T18:02:22.259Z"
+  },
+  "code": "PN00017",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f63e562c452c68d81a0a50"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7326"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "69e314e7bf59d77e52aadd70"
+      },
+      "productName": "iPhone 13 Pro Max",
+      "sku": "SP00088",
+      "quantity": 20,
+      "importPrice": 14000000,
+      "totalPrice": 280000000,
+      "_id": {
+        "$oid": "69f63e562c452c68d81a0a51"
+      }
+    }
+  ],
+  "totalAmount": 280000000,
+  "totalItems": 20,
+  "status": "completed",
+  "importDate": {
+    "$date": "2026-05-02T17:00:00.000Z"
+  },
+  "note": "",
+  "createdBy": {
+    "$oid": "69d1308c3ff7a3b9cceb5f08"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T18:11:34.941Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T18:11:39.181Z"
+  },
+  "code": "PN00018",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f641802c452c68d81a16d5"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7326"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "69e314e7bf59d77e52aadd70"
+      },
+      "productName": "iPhone 13 Pro Max",
+      "sku": "SP00088",
+      "quantity": 20,
+      "importPrice": 14000000,
+      "totalPrice": 280000000,
+      "_id": {
+        "$oid": "69f641802c452c68d81a16d6"
+      }
+    },
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7375"
+      },
+      "productName": "MacBook Pro M3 Pro 14 inch",
+      "sku": "SP00014",
+      "quantity": 10,
+      "importPrice": 40000000,
+      "totalPrice": 400000000,
+      "_id": {
+        "$oid": "69f641802c452c68d81a16d7"
+      }
+    }
+  ],
+  "totalAmount": 680000000,
+  "totalItems": 30,
+  "status": "completed",
+  "importDate": {
+    "$date": "2026-04-30T17:00:00.000Z"
+  },
+  "note": "",
+  "createdBy": {
+    "$oid": "69d134383ff7a3b9cceb62b9"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T18:25:04.652Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T18:25:13.628Z"
+  },
+  "code": "PN00019",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f64217b08fccfcd381579a"
+  },
+  "supplier": {
+    "$oid": "69bfb7ee8f6e87250e0c7331"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "69bfb7ee8f6e87250e0c7375"
+      },
+      "productName": "MacBook Pro M3 Pro 14 inch",
+      "sku": "SP00014",
+      "quantity": 20,
+      "importPrice": 40000000,
+      "totalPrice": 800000000,
+      "_id": {
+        "$oid": "69f64217b08fccfcd381579b"
+      }
+    }
+  ],
+  "totalAmount": 800000000,
+  "totalItems": 20,
+  "status": "completed",
+  "importDate": {
+    "$date": "2026-04-30T17:00:00.000Z"
+  },
+  "note": "",
+  "createdBy": {
+    "$oid": "69d134383ff7a3b9cceb62b9"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T18:27:35.505Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-02T18:27:54.366Z"
+  },
+  "code": "PN00020",
+  "__v": 0
+}]
