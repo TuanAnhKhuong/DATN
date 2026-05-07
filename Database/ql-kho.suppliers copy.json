@@ -1,0 +1,210 @@
+[{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7321"
+  },
+  "name": "Công ty TNHH Samsung Vina",
+  "contactPerson": "Nguyễn Văn An",
+  "phone": "0901234567",
+  "email": "contact@samsungvina.vn",
+  "address": "2 Hai Bà Trưng, Quận 1, TP.HCM",
+  "taxCode": "0301234567",
+  "status": "active",
+  "note": "Nhà cung cấp điện thoại, TV, gia dụng",
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.191Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.191Z"
+  },
+  "code": "NCC0001",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7326"
+  },
+  "name": "Apple Việt Nam",
+  "contactPerson": "Trần Thị Bích",
+  "phone": "0912345678",
+  "email": "supply@applevn.com",
+  "address": "123 Nguyễn Huệ, Quận 1, TP.HCM",
+  "taxCode": "0312345678",
+  "status": "active",
+  "note": "Nhà cung cấp iPhone, iPad, MacBook",
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.193Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.193Z"
+  },
+  "code": "NCC0002",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c732c"
+  },
+  "name": "Công ty CP Nike Việt Nam",
+  "contactPerson": "Lê Minh Tuấn",
+  "phone": "0923456789",
+  "email": "order@nikevn.com",
+  "address": "456 Lê Lợi, Quận 1, TP.HCM",
+  "taxCode": "0323456789",
+  "status": "active",
+  "note": "Giày dép, quần áo thể thao",
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.194Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.194Z"
+  },
+  "code": "NCC0003",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7331"
+  },
+  "name": "Adidas Distribution",
+  "contactPerson": "Phạm Hồng Đức",
+  "phone": "0934567890",
+  "email": "supply@adidas.vn",
+  "address": "789 Trần Hưng Đạo, Quận 5, TP.HCM",
+  "taxCode": "0334567890",
+  "status": "active",
+  "note": "Giày dép, đồ thể thao",
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.195Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.195Z"
+  },
+  "code": "NCC0004",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7335"
+  },
+  "name": "Xiaomi Việt Nam",
+  "contactPerson": "Hoàng Thị Lan",
+  "phone": "0945678901",
+  "email": "wholesale@xiaomivn.com",
+  "address": "321 Cách Mạng Tháng 8, Quận 10, TP.HCM",
+  "taxCode": "0345678901",
+  "status": "active",
+  "note": "Điện thoại, phụ kiện, smart home",
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.196Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.196Z"
+  },
+  "code": "NCC0005",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c733a"
+  },
+  "name": "Công ty TNHH Unilever Việt Nam",
+  "contactPerson": "Nguyễn Thanh Hà",
+  "phone": "0956789012",
+  "email": "b2b@unilevervn.com",
+  "address": "156 Nguyễn Lương Bằng, Quận 7, TP.HCM",
+  "taxCode": "0356789012",
+  "status": "active",
+  "note": "Mỹ phẩm, chăm sóc cá nhân",
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.196Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.196Z"
+  },
+  "code": "NCC0006",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c733f"
+  },
+  "name": "Tập đoàn Vinamilk",
+  "contactPerson": "Đặng Văn Phúc",
+  "phone": "0967890123",
+  "email": "order@vinamilk.com.vn",
+  "address": "10 Tân Trào, Quận 7, TP.HCM",
+  "taxCode": "0367890123",
+  "status": "active",
+  "note": "Sữa, thực phẩm dinh dưỡng",
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.197Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.197Z"
+  },
+  "code": "NCC0007",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7344"
+  },
+  "name": "Công ty CP Thế Giới Di Động",
+  "contactPerson": "Lý Thị Mai",
+  "phone": "0978901234",
+  "email": "supply@tgdd.vn",
+  "address": "128 Trần Quang Khải, Quận 1, TP.HCM",
+  "taxCode": "0378901234",
+  "status": "active",
+  "note": "Phân phối điện tử, gia dụng",
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.198Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.198Z"
+  },
+  "code": "NCC0008",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c7348"
+  },
+  "name": "ZARA Fashion Việt Nam",
+  "contactPerson": "Vũ Hoàng Nam",
+  "phone": "0989012345",
+  "email": "wholesale@zaravn.com",
+  "address": "92 Nam Kỳ Khởi Nghĩa, Quận 1, TP.HCM",
+  "taxCode": "0389012345",
+  "status": "active",
+  "note": "Thời trang nam nữ cao cấp",
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.198Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.198Z"
+  },
+  "code": "NCC0009",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bfb7ee8f6e87250e0c734b"
+  },
+  "name": "Logitech Distribution VN",
+  "contactPerson": "Trương Minh Khôi",
+  "phone": "0990123456",
+  "email": "partner@logitechvn.com",
+  "address": "45 Pasteur, Quận 3, TP.HCM",
+  "taxCode": "0390123456",
+  "status": "active",
+  "note": "Phụ kiện máy tính, gaming",
+  "createdAt": {
+    "$date": "2026-03-22T09:35:42.199Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-22T09:35:42.199Z"
+  },
+  "code": "NCC0010",
+  "__v": 0
+}]
