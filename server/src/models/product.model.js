@@ -127,9 +127,19 @@ productSchema.index({ isFeatured: 1, status: 1 });
 
 productSchema.pre('save', async function (next) {
     // Auto-gen SKU
-    if (!this.sku) {
-        const count = await mongoose.model('product').countDocuments();
-        this.sku = `SP${String(count + 1).padStart(5, '0')}`;
+   if (!this.sku) {
+    const lastProduct = await mongoose
+        .model('product')
+        .findOne({ sku: /^SP\d+$/ })
+        .sort({ sku: -1 });
+
+    let nextNumber = 1;
+
+    if (lastProduct?.sku) {
+        nextNumber = parseInt(lastProduct.sku.replace('SP', ''), 10) + 1;
+    }
+
+    this.sku = `SP${String(nextNumber).padStart(5, '0')}`;
     }
 
     // Auto-gen slug từ name

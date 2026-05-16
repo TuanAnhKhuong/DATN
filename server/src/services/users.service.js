@@ -242,11 +242,13 @@ class UserService {
         // =====================================================================
         // SYSTEM INSTRUCTION – Định nghĩa vai trò & cách dùng tool
         // =====================================================================
-        const systemInstruction = `Bạn là trợ lý AI thông minh cho hệ thống Quản lý kho. 
-Bạn có thể truy vấn dữ liệu thực từ cơ sở dữ liệu thông qua các công cụ (tools) được cung cấp.
-Khi người dùng hỏi về tồn kho, phiếu nhập, phiếu xuất, sản phẩm, nhà cung cấp, hãy LUÔN sử dụng tool phù hợp để lấy dữ liệu thực thay vì tự đoán.
-Trả lời bằng tiếng Việt, rõ ràng, chuyên nghiệp. Khi có danh sách, format dưới dạng markdown bảng hoặc danh sách có thứ tự.
-Không bịa số liệu. Nếu không tìm thấy dữ liệu, hãy nói rõ.`;
+        const systemInstruction = `Bạn là trợ lý AI thông minh cho hệ thống Quản lý kho.
+        QUY TẮC BẮT BUỘC:
+        - Khi người dùng hỏi về sản phẩm, tồn kho, số lượng, hàng sắp hết, hàng hết, phiếu nhập, phiếu xuất, thống kê hoặc nhà cung cấp thì BẮT BUỘC phải gọi tool để lấy dữ liệu thật từ MongoDB.
+        - Không được tự suy đoán số liệu.
+        - Nếu không tìm thấy dữ liệu thì trả lời rõ: "Không tìm thấy dữ liệu phù hợp".
+        - Trả lời bằng tiếng Việt, rõ ràng, dễ hiểu.
+        - Nếu có danh sách sản phẩm hoặc phiếu thì ưu tiên trình bày dạng bảng markdown.`;
 
         // =====================================================================
         // TOOL DEFINITIONS – Khai báo các hàm DB cho Gemini
@@ -457,7 +459,12 @@ Không bịa số liệu. Nếu không tìm thấy dữ liệu, hãy nói rõ.`;
                 case 'get_out_of_stock_products': {
                     const limit = args.limit || 10;
                     const products = await modelProduct
-                        .find({ status: 'out_of_stock' })
+                       .find({
+                             $or: [
+                                { status: 'out_of_stock' },
+                                { quantity: 0 }
+                                  ]
+                            })
                         .select('name sku quantity unit')
                         .populate('category', 'name')
                         .sort({ updatedAt: -1 })
@@ -559,11 +566,52 @@ Không bịa số liệu. Nếu không tìm thấy dữ liệu, hãy nói rõ.`;
                 }
 
                 case 'search_products': {
-                    const limit = args.limit || 10;
-                    const query = { status: { $ne: 'inactive' } };
-                    if (args.keyword) query.name = { $regex: args.keyword, $options: 'i' };
-                    if (args.brand) query.brand = { $regex: args.brand, $options: 'i' };
+    const limit = args.limit || 10;
+    const query = {
+        status: { $ne: 'inactive' }
+    };
 
+    if (args.keyword) {
+        query.$or = [
+            {
+                name: {
+                    $regex: args.keyword,
+                    $options: 'i'
+                }
+            },
+            {
+                sku: {
+                    $regex: args.keyword,
+                    $options: 'i'
+                }
+            },
+            {
+                brand: {
+                    $regex: args.keyword,
+                    $options: 'i'
+                }
+            },
+            {
+                barcode: {
+                    $regex: args.keyword,
+                    $options: 'i'
+                }
+            },
+            {
+                searchKeywords: {
+                    $regex: args.keyword,
+                    $options: 'i'
+                }
+            }
+        ];
+    }
+
+    if (args.brand) {
+        query.brand = {
+            $regex: args.brand,
+            $options: 'i'
+        };
+    }
                     if (args.category) {
                         const cat = await modelCategory.findOne({
                             name: { $regex: args.category, $options: 'i' },
@@ -652,47 +700,104 @@ Không bịa số liệu. Nếu không tìm thấy dữ liệu, hãy nói rõ.`;
         const MAX_TURNS = 5;
 
         for (let turn = 0; turn < MAX_TURNS; turn++) {
-            const response = await ai.models.generateContent({
-                model: 'gemini-2.5-flash',
+             try {
+             const response = await ai.models.generateContent({
+                  model: 'gemini-2.5-flash',
                 contents: currentContents,
-                config: {
+                 config: {
                     systemInstruction,
-                    tools,
+                 tools,
                 },
-            });
-
-            // Kiểm tra có function call không
-            const candidate = response.candidates?.[0];
-            const parts = candidate?.content?.parts || [];
-            const functionCalls = parts.filter((p) => p.functionCall);
-
-            if (functionCalls.length === 0) {
-                // Không có function call → lấy text trả về
-                finalText = response.text || parts.find((p) => p.text)?.text || 'Không có phản hồi.';
-                break;
-            }
-
-            // Thực thi tất cả function calls
-            const functionResults = [];
-            for (const part of functionCalls) {
-                const { name, args } = part.functionCall;
-                let result;
-                try {
-                    result = await executeTool(name, args || {});
-                } catch (err) {
-                    result = { error: err.message };
-                }
-                functionResults.push({
-                    functionResponse: {
-                        name,
-                        response: { result },
-                    },
                 });
+
+                const candidate = response.candidates?.[0];
+                const parts = candidate?.content?.parts || [];
+                const functionCalls = parts.filter(
+                    (p) => p.functionCall
+                );
+
+        // Không gọi tool → trả text luôn
+        if (functionCalls.length === 0) {
+            finalText =
+                response.text ||
+                parts.find((p) => p.text)?.text ||
+                'Không có phản hồi';
+
+            break;
+        }
+
+        const functionResults = [];
+
+        for (const part of functionCalls) {
+            const { name, args } =
+                part.functionCall;
+
+            let result;
+
+            try {
+                result =
+                  await executeTool(
+                    name,
+                    args || {}
+                  );
+
+            } catch(err){
+
+                console.log(
+                  'Tool error:',
+                  err
+                );
+
+                result = {
+                    error: err.message
+                };
             }
 
-            // Thêm model turn + function results vào conversation
-            currentContents = [...currentContents, { role: 'model', parts }, { role: 'user', parts: functionResults }];
+            functionResults.push({
+                functionResponse:{
+                    name,
+                    response:{
+                        result
+                    }
+                }
+            });
         }
+
+        currentContents = [
+            ...currentContents,
+            {
+                role:'model',
+                parts
+            },
+            {
+                role:'user',
+                parts:functionResults
+            }
+        ];
+
+    } catch(error){
+
+        console.log(
+            'Gemini Error:',
+            error
+        );
+
+        if(
+          error.message?.includes(
+             '429'
+          )
+        ){
+            finalText =
+            'AI đang quá tải hoặc vượt giới hạn lượt hỏi. Vui lòng chờ khoảng 15–20 giây.';
+        }
+        else{
+            finalText =
+            'Đã xảy ra lỗi khi xử lý chatbot.';
+        }
+
+        break;
+        }
+}
 
         // Lưu lịch sử vào DB
         const lastUserMsg = contents.filter((c) => c.role === 'user').pop();
