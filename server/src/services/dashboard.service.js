@@ -35,6 +35,7 @@ class DashboardService {
             categoryStock,
             importByDay,
             exportByDay,
+            profitThisMonth,
         ] = await Promise.all([
             modelProduct.countDocuments({ status: { $ne: 'draft' } }),
             modelCategory.countDocuments(),
@@ -220,6 +221,55 @@ class DashboardService {
                 },
                 { $sort: { _id: 1 } },
             ]),
+            // Lợi nhuận tháng này = (giá xuất - giá nhập) * số lượng xuất
+            modelExport.aggregate([
+                {
+                    $addFields: {
+                        effectiveDate: { $ifNull: ['$exportDate', '$createdAt'] },
+                    },
+                },
+                {
+                    $match: {
+                        status: 'completed',
+                        effectiveDate: { $gte: startOfMonth },
+                    },
+                },
+                { $unwind: '$items' },
+                {
+                    $lookup: {
+                        from: 'products',
+                        localField: 'items.product',
+                        foreignField: '_id',
+                        as: 'productInfo',
+                    },
+                },
+                {
+                    $unwind: {
+                        path: '$productInfo',
+                        preserveNullAndEmptyArrays: true,
+                    },
+                },
+                {
+                    $group: {
+                        _id: null,
+                        profit: {
+                            $sum: {
+                                $multiply: [
+                                    {
+                                        $subtract: [
+                                            '$items.exportPrice',
+                                            {
+                                                $ifNull: ['$productInfo.importPrice', 0],
+                                            },
+                                        ],
+                                    },
+                                    '$items.quantity',
+                                ],
+                            },
+                        },
+                    },
+                },
+            ]),
         ]);
 
         // Build monthly chart data (6 tháng)
@@ -285,7 +335,7 @@ class DashboardService {
                 exportTotal,
                 exportCount: exportThisMonth[0]?.count || 0,
                 exportItems: exportThisMonth[0]?.items || 0,
-                profit: exportTotal - importTotal,
+                profit: profitThisMonth[0]?.profit || 0,
                 importGrowth: importLast > 0 ? (((importTotal - importLast) / importLast) * 100).toFixed(1) : 0,
                 exportGrowth: exportLast > 0 ? (((exportTotal - exportLast) / exportLast) * 100).toFixed(1) : 0,
             },

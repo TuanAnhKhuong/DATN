@@ -3,8 +3,19 @@ const { BadRequestError, NotFoundError } = require('../core/error.response');
 
 class ProductService {
     async createProduct(data) {
-        const product = await modelProduct.create(data);
-        return await product.populate(['category', 'supplier']);
+    const existingProduct = await modelProduct.findOne({
+        name: {
+            $regex: `^${data.name}$`,
+            $options: 'i'
+        }
+    });
+
+    if (existingProduct) {
+        throw new BadRequestError('Sản phẩm đã tồn tại trong kho');
+    }
+
+    const product = await modelProduct.create(data);
+    return await product.populate(['category', 'supplier']);
     }
 
     async getAllProducts(query = {}) {

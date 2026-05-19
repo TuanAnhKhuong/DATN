@@ -44,7 +44,50 @@ const DataManager = () => {
             message.error({ content: 'Tải danh sách thất bại', key: 'export' });
         }
     };
+    const exportAllProducts = async () => {
+    try {
+        message.loading({
+            content: 'Đang xuất toàn bộ sản phẩm...',
+            key: 'export',
+        });
 
+        const res = await axiosClient.get(
+            '/products',
+            { params: { limit: 9999 } }
+        );
+
+        const products =
+            res.metadata.products ||
+            res.metadata;
+
+        const data = products.map((p, i) => ({
+            STT: i + 1,
+            'Mã SP': p.sku,
+            'Tên sản phẩm': p.name,
+            'Danh mục': p.category?.name || '',
+            'Nhà cung cấp': p.supplier?.name || '',
+            'Tồn kho': p.quantity,
+            'Giá nhập': p.importPrice,
+            'Giá bán': p.salePrice,
+        }));
+
+        downloadExcel(
+            data,
+            'Danh_sach_san_pham'
+        );
+
+        message.success({
+            content: `Đã xuất ${data.length} sản phẩm`,
+            key: 'export',
+        });
+
+    } catch {
+        message.error({
+            content: 'Xuất thất bại',
+            key: 'export',
+        });
+        }
+    };
     const handleConfirmExport = () => {
         const selected = productsList.filter((p) => selectedProductKeys.includes(p._id));
         if (selected.length === 0) {
@@ -190,75 +233,200 @@ const DataManager = () => {
     };
 
     const handleImportProducts = async () => {
-        if (!previewData || previewData.length === 0) return;
-        setImporting(true);
-        let success = 0,
-            failed = 0;
-        const errors = [];
+    if (!previewData || previewData.length === 0) return;
 
-        // Lấy danh sách sản phẩm để so khớp cập nhật tồn kho
-        let allProductsMap = [];
-        try {
-            const res = await axiosClient.get('/products', { params: { limit: 9999 } });
-            allProductsMap = res.metadata.products || res.metadata || [];
-        } catch (e) {
-            message.error('Không tải được danh sách sản phẩm hiện tại để đối chiếu');
-            setImporting(false);
+    setImporting(true);
+
+    let success = 0;
+    let failed = 0;
+    const errors = [];
+
+    let allProductsMap = [];
+
+    try {
+        const res = await axiosClient.get('/products', {
+            params: { limit: 9999 },
+        });
+
+        allProductsMap =
+            res.metadata.products ||
+            res.metadata ||
+            [];
+
+    } catch {
+        message.error(
+            'Không tải được danh sách sản phẩm'
+        );
+
+        setImporting(false);
+        return;
+    }
+
+    try {
+
+        const items = [];
+
+        for (const row of previewData) {
+
+            const sku =
+                (row['Mã SP'] ||
+                    row['sku'] ||
+                    '')
+                    .toString()
+                    .trim();
+
+            const name =
+                (row['Tên sản phẩm'] ||
+                    row['name'] ||
+                    '')
+                    .toString()
+                    .trim();
+
+            const quantity = Number(
+                row['Số lượng nhập thêm'] ||
+                row['Tồn kho'] ||
+                row['quantity'] ||
+                0
+            );
+
+            if (quantity <= 0)
+                continue;
+
+            let product = null;
+
+            if (sku) {
+                product =
+                    allProductsMap.find(
+                        p => p.sku === sku
+                    );
+            }
+
+            if (!product && name) {
+                product =
+                    allProductsMap.find(
+                        p =>
+                        p.name
+                        ?.trim()
+                        .toLowerCase()
+                        ===
+                        name
+                        .trim()
+                        .toLowerCase()
+                    );
+            }
+
+            if (!product) {
+
+                failed++;
+
+                errors.push(
+                    `Không tìm thấy ${
+                        sku || name
+                    }`
+                );
+
+                continue;
+            }
+
+            items.push({
+
+                product:
+                    product._id,
+
+                quantity,
+
+                importPrice:
+                    product.importPrice || 0,
+
+                totalPrice:
+                    quantity *
+                    (product.importPrice || 0)
+
+            });
+
+            success++;
+        }
+
+        if (items.length === 0) {
+
+            message.warning(
+                'Không có dữ liệu hợp lệ'
+            );
+
             return;
         }
 
-        for (const row of previewData) {
-            try {
-                const sku = (row['Mã SP'] || row['sku'] || '').toString().trim();
-                const name = (row['Tên sản phẩm'] || row['name'] || '').toString().trim();
-                const stockVal =
-                    row['Số lượng nhập thêm'] !== undefined
-                        ? row['Số lượng nhập thêm']
-                        : row['Tồn kho'] !== undefined
-                          ? row['Tồn kho']
-                          : row['quantity'];
+        // lấy supplier đầu tiên
 
-                if (stockVal === undefined || stockVal === '') {
-                    throw new Error('Không có cột Số lượng nhập thêm hoặc Tồn kho');
-                }
-                const additionalQuantity = Number(stockVal);
+        const firstProduct =
+            allProductsMap.find(
+                p =>
+                p._id ===
+                items[0].product
+            );
 
-                let product = null;
-                if (sku) {
-                    product = allProductsMap.find((p) => p.sku === sku);
-                }
-                if (!product && name) {
-                    product = allProductsMap.find((p) => p.name === name);
-                }
+        await axiosClient.post(
+            '/imports',
+            {
 
-                if (!product) {
-                    throw new Error(`Không tìm thấy sản phẩm ${sku ? `(Mã SP: ${sku})` : name}`);
-                }
+                supplier:
+                    firstProduct
+                    ?.supplier?._id ||
+                    firstProduct
+                    ?.supplier,
 
-                // Cộng dồn số lượng thêm vào tồn kho hiện tại
-                const updatedQuantity = (product.quantity || 0) + additionalQuantity;
+                items,
 
-                const updatePayload = {
-                    ...product,
-                    category: product.category?._id || product.category,
-                    supplier: product.supplier?._id || product.supplier,
-                    quantity: updatedQuantity,
-                };
+                totalItems:
+                    items.reduce(
+                        (a,b)=>
+                        a+b.quantity,
+                        0
+                    ),
 
-                await axiosClient.put(`/products/${product._id}`, updatePayload);
-                success++;
-            } catch (e) {
-                failed++;
-                errors.push(
-                    `Dòng ${success + failed}: ${row['Mã SP'] || row['Tên sản phẩm'] || 'N/A'} — ${e.response?.data?.message || e.message}`,
-                );
+                totalAmount:
+                    items.reduce(
+                        (a,b)=>
+                        a+b.totalPrice,
+                        0
+                    ),
+
+                status:
+                    'completed',
+
+                importDate:
+                    new Date(),
+
+                note:
+                'Nhập kho hàng loạt từ Excel'
+
             }
-        }
+        );
+
+        setImportResult({
+            success,
+            failed,
+            errors
+        });
+
+        setPreviewOpen(false);
+
+        message.success(
+            `Đã nhập ${success} sản phẩm`
+        );
+
+        } catch(e){
+
+             message.error(
+            e.response?.data?.message ||
+            'Import thất bại'
+        );
+
+        } finally {
 
         setImporting(false);
-        setImportResult({ success, failed, errors });
-        setPreviewOpen(false);
-        message.info(`Cập nhật hoàn tất: ${success} thành công, ${failed} lỗi`);
+
+        }
     };
 
     // ==================== UTILS ====================
@@ -291,7 +459,7 @@ const DataManager = () => {
             desc: 'Xuất toàn bộ danh sách sản phẩm',
             icon: <ShoppingOutlined />,
             color: '#4F46E5',
-            action: openExportModal,
+            action: exportAllProducts,
         },
         {
             title: 'Phiếu nhập kho',

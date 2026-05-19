@@ -274,7 +274,7 @@ const Dashboard = () => {
                 const slow = products
                     .map((p) => ({ ...p, daysInStock: getDays(p.lastImportDate) }))
                     .sort((a, b) => b.daysInStock - a.daysInStock)
-                    .slice(0, 10);
+                    .slice(0, 5);
                 setSlowMoving(slow);
             } catch (e) {
                 console.error(e);
@@ -1086,7 +1086,7 @@ const Dashboard = () => {
                                 {[
                                     { c: COLORS.success, l: 'Bình thường' },
                                     { c: COLORS.warning, l: 'Cần theo dõi' },
-                                    { c: '#F97316', l: 'Cần KM' },
+                                    { c: '#F97316', l: 'Cần khuyến mại' },
                                     { c: COLORS.danger, l: 'Tồn lâu' },
                                 ].map((x) => (
                                     <span
@@ -1121,7 +1121,7 @@ const Dashboard = () => {
                             <SectionTitle
                                 icon="⚠️"
                                 title="Sản phẩm tồn kho lâu nhất"
-                                subtitle="Top 10 sản phẩm cần xử lý sớm"
+                                subtitle="Top 5 sản phẩm cần xử lý sớm"
                             />
                             <Table
                                 dataSource={slowMoving}
@@ -1161,7 +1161,7 @@ const Dashboard = () => {
                                     {
                                         title: 'Tồn kho',
                                         dataIndex: 'quantity',
-                                        width: 70,
+                                        width: 120,
                                         align: 'center',
                                         render: (v, r) => (
                                             <span

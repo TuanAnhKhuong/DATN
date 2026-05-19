@@ -27,7 +27,6 @@ class UserService {
         const salt = bcrypt.genSaltSync(saltRounds);
         const passwordHash = bcrypt.hashSync(password, salt);
 
-        // Tạo user mới
         const newUser = await modelUser.create({
             fullName,
             email,
@@ -35,7 +34,6 @@ class UserService {
             typeLogin: 'email',
         });
 
-        // Tạo API key và token
         await createApiKey(newUser._id);
         const token = await createToken({ id: newUser._id });
         const refreshToken = await createRefreshToken({ id: newUser._id });
@@ -80,9 +78,7 @@ class UserService {
 
     async refreshToken(refreshToken) {
         const decoded = await verifyToken(refreshToken);
-
         const user = await modelUser.findOne({ _id: decoded.id });
-
         const token = await createToken({ id: user._id });
         return { token };
     }
@@ -129,6 +125,7 @@ class UserService {
         if (!isPasswordValid) {
             throw new BadRequestError('Mật khẩu hiện tại không chính xác');
         }
+
         const saltRounds = 10;
         const salt = bcrypt.genSaltSync(saltRounds);
         const passwordHash = bcrypt.hashSync(newPassword, salt);
@@ -201,11 +198,9 @@ class UserService {
         });
 
         const saltRounds = 10;
-
         const otpHash = bcrypt.hashSync(otp, saltRounds);
 
         await modelOtp.create({ email: user.email, otp: otpHash });
-
         await SendMailForgotPassword(user.email, otp);
 
         return { token, otp };
@@ -218,6 +213,7 @@ class UserService {
         if (!user) {
             throw new BadRequestError('Tài khoản không tồn tại');
         }
+
         const findOtp = await modelOtp.findOne({ email: user.email }).sort({ createdAt: -1 });
 
         if (!findOtp) {
@@ -228,9 +224,11 @@ class UserService {
         if (!checkOtp) {
             throw new BadRequestError('Mã OTP không hợp lệ');
         }
+
         const saltRounds = 10;
         const salt = bcrypt.genSaltSync(saltRounds);
         const passwordHash = bcrypt.hashSync(newPassword, salt);
+
         user.password = passwordHash;
         await user.save();
         return user;
@@ -239,20 +237,15 @@ class UserService {
     async chatbot(contents, userId) {
         const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
-        // =====================================================================
-        // SYSTEM INSTRUCTION – Định nghĩa vai trò & cách dùng tool
-        // =====================================================================
         const systemInstruction = `Bạn là trợ lý AI thông minh cho hệ thống Quản lý kho.
         QUY TẮC BẮT BUỘC:
-        - Khi người dùng hỏi về sản phẩm, tồn kho, số lượng, hàng sắp hết, hàng hết, phiếu nhập, phiếu xuất, thống kê hoặc nhà cung cấp thì BẮT BUỘC phải gọi tool để lấy dữ liệu thật từ MongoDB.
+        - Khi người dùng hỏi về sản phẩm, tồn kho, số lượng, hàng sắp hết, hàng hết, phiếu nhập, phiếu xuất, thống kê, doanh thu, lợi nhuận, dashboard hoặc nhà cung cấp thì BẮT BUỘC phải gọi tool để lấy dữ liệu thật từ MongoDB.
+        - Khi người dùng hỏi về lợi nhuận tháng này, nhập kho tháng này, xuất kho tháng này, giá trị tồn kho, tổng quan dashboard thì gọi tool get_dashboard_stats.
         - Không được tự suy đoán số liệu.
         - Nếu không tìm thấy dữ liệu thì trả lời rõ: "Không tìm thấy dữ liệu phù hợp".
         - Trả lời bằng tiếng Việt, rõ ràng, dễ hiểu.
         - Nếu có danh sách sản phẩm hoặc phiếu thì ưu tiên trình bày dạng bảng markdown.`;
 
-        // =====================================================================
-        // TOOL DEFINITIONS – Khai báo các hàm DB cho Gemini
-        // =====================================================================
         const tools = [
             {
                 functionDeclarations: [
@@ -262,28 +255,28 @@ class UserService {
                         parameters: {
                             type: 'OBJECT',
                             properties: {
-                                name: { type: 'STRING', description: 'Tên sản phẩm cần tìm (tìm kiếm gần đúng)' },
+                                name: { type: 'STRING', description: 'Tên sản phẩm cần tìm' },
                                 sku: { type: 'STRING', description: 'Mã SKU của sản phẩm' },
                             },
                         },
                     },
                     {
                         name: 'get_low_stock_products',
-                        description: 'Lấy danh sách sản phẩm sắp hết hàng (tồn kho ≤ mức tồn tối thiểu)',
+                        description: 'Lấy danh sách sản phẩm sắp hết hàng',
                         parameters: {
                             type: 'OBJECT',
                             properties: {
-                                limit: { type: 'NUMBER', description: 'Số lượng sản phẩm tối đa trả về, mặc định 10' },
+                                limit: { type: 'NUMBER', description: 'Số lượng sản phẩm tối đa trả về' },
                             },
                         },
                     },
                     {
                         name: 'get_out_of_stock_products',
-                        description: 'Lấy danh sách sản phẩm hết hàng (tồn kho = 0)',
+                        description: 'Lấy danh sách sản phẩm hết hàng',
                         parameters: {
                             type: 'OBJECT',
                             properties: {
-                                limit: { type: 'NUMBER', description: 'Số lượng sản phẩm tối đa trả về, mặc định 10' },
+                                limit: { type: 'NUMBER', description: 'Số lượng sản phẩm tối đa trả về' },
                             },
                         },
                     },
@@ -295,15 +288,11 @@ class UserService {
                             properties: {
                                 period: {
                                     type: 'STRING',
-                                    description:
-                                        'Khoảng thời gian: "today" (hôm nay), "week" (tuần này), "month" (tháng này), "all" (tất cả)',
+                                    description: 'today, week, month, all',
                                     enum: ['today', 'week', 'month', 'all'],
                                 },
-                                status: {
-                                    type: 'STRING',
-                                    description: 'Trạng thái phiếu: pending, completed, cancelled, draft',
-                                },
-                                limit: { type: 'NUMBER', description: 'Số lượng phiếu tối đa trả về, mặc định 10' },
+                                status: { type: 'STRING', description: 'pending, completed, cancelled, draft' },
+                                limit: { type: 'NUMBER', description: 'Số lượng phiếu tối đa trả về' },
                             },
                         },
                     },
@@ -315,21 +304,26 @@ class UserService {
                             properties: {
                                 period: {
                                     type: 'STRING',
-                                    description:
-                                        'Khoảng thời gian: "today" (hôm nay), "week" (tuần này), "month" (tháng này), "all" (tất cả)',
+                                    description: 'today, week, month, all',
                                     enum: ['today', 'week', 'month', 'all'],
                                 },
-                                status: {
-                                    type: 'STRING',
-                                    description: 'Trạng thái phiếu: pending, completed, cancelled, draft',
-                                },
-                                limit: { type: 'NUMBER', description: 'Số lượng phiếu tối đa trả về, mặc định 10' },
+                                status: { type: 'STRING', description: 'pending, completed, cancelled, draft' },
+                                limit: { type: 'NUMBER', description: 'Số lượng phiếu tối đa trả về' },
                             },
                         },
                     },
                     {
                         name: 'get_inventory_summary',
-                        description: 'Lấy tổng quan kho hàng: tổng số sản phẩm, tổng giá trị kho, số hàng sắp hết',
+                        description: 'Lấy tổng quan kho hàng',
+                        parameters: {
+                            type: 'OBJECT',
+                            properties: {},
+                        },
+                    },
+                    {
+                        name: 'get_dashboard_stats',
+                        description:
+                            'Lấy thống kê dashboard gồm nhập kho tháng này, xuất kho tháng này, lợi nhuận tháng này, giá trị tồn kho, tổng sản phẩm, hàng sắp hết, hàng hết',
                         parameters: {
                             type: 'OBJECT',
                             properties: {},
@@ -344,23 +338,22 @@ class UserService {
                                 keyword: { type: 'STRING', description: 'Từ khóa tìm kiếm' },
                                 category: { type: 'STRING', description: 'Tên danh mục sản phẩm' },
                                 brand: { type: 'STRING', description: 'Thương hiệu sản phẩm' },
-                                limit: { type: 'NUMBER', description: 'Số lượng kết quả tối đa, mặc định 10' },
+                                limit: { type: 'NUMBER', description: 'Số lượng kết quả tối đa' },
                             },
                         },
                     },
                     {
                         name: 'get_top_products',
-                        description: 'Lấy top sản phẩm theo tiêu chí (tồn kho nhiều nhất, đã bán nhiều nhất)',
+                        description: 'Lấy top sản phẩm theo tiêu chí',
                         parameters: {
                             type: 'OBJECT',
                             properties: {
                                 sortBy: {
                                     type: 'STRING',
-                                    description:
-                                        'Sắp xếp theo: "quantity" (tồn kho), "soldCount" (đã bán), "importPrice" (giá nhập), "salePrice" (giá bán)',
+                                    description: 'quantity, soldCount, importPrice, salePrice',
                                     enum: ['quantity', 'soldCount', 'importPrice', 'salePrice'],
                                 },
-                                limit: { type: 'NUMBER', description: 'Số lượng sản phẩm top, mặc định 5' },
+                                limit: { type: 'NUMBER', description: 'Số lượng sản phẩm top' },
                             },
                         },
                     },
@@ -370,10 +363,10 @@ class UserService {
                         parameters: {
                             type: 'OBJECT',
                             properties: {
-                                name: { type: 'STRING', description: 'Tên nhà cung cấp cần tìm (tìm gần đúng)' },
+                                name: { type: 'STRING', description: 'Tên nhà cung cấp cần tìm' },
                                 status: {
                                     type: 'STRING',
-                                    description: 'Trạng thái: "active" (đang hoạt động), "inactive" (ngừng)',
+                                    description: 'active hoặc inactive',
                                     enum: ['active', 'inactive'],
                                 },
                             },
@@ -383,15 +376,13 @@ class UserService {
             },
         ];
 
-        // =====================================================================
-        // FUNCTION EXECUTOR – Thực thi query MongoDB theo tool AI chọn
-        // =====================================================================
         const executeTool = async (toolName, args) => {
             const modelProduct = require('../models/product.model');
             const modelImport = require('../models/import.model');
             const modelExport = require('../models/export.model');
             const modelSupplier = require('../models/supplier.model');
             const modelCategory = require('../models/category.model');
+            const DashboardService = require('./dashboard.service');
 
             const getDateRange = (period) => {
                 const now = new Date();
@@ -404,7 +395,7 @@ class UserService {
                 } else if (period === 'month') {
                     start = new Date(now.getFullYear(), now.getMonth(), 1);
                 } else {
-                    return null; // all
+                    return null;
                 }
                 return start;
             };
@@ -414,12 +405,14 @@ class UserService {
                     const query = { status: { $ne: 'inactive' } };
                     if (args.sku) query.sku = { $regex: args.sku, $options: 'i' };
                     if (args.name) query.name = { $regex: args.name, $options: 'i' };
+
                     const products = await modelProduct
                         .find(query)
                         .select('name sku quantity minStock unit status salePrice importPrice')
                         .populate('category', 'name')
                         .limit(10)
                         .lean();
+
                     return products.map((p) => ({
                         name: p.name,
                         sku: p.sku,
@@ -435,6 +428,7 @@ class UserService {
 
                 case 'get_low_stock_products': {
                     const limit = args.limit || 10;
+
                     const products = await modelProduct
                         .find({
                             status: { $nin: ['inactive', 'out_of_stock'] },
@@ -446,6 +440,7 @@ class UserService {
                         .sort({ quantity: 1 })
                         .limit(limit)
                         .lean();
+
                     return products.map((p) => ({
                         name: p.name,
                         sku: p.sku,
@@ -458,18 +453,17 @@ class UserService {
 
                 case 'get_out_of_stock_products': {
                     const limit = args.limit || 10;
+
                     const products = await modelProduct
-                       .find({
-                             $or: [
-                                { status: 'out_of_stock' },
-                                { quantity: 0 }
-                                  ]
-                            })
+                        .find({
+                            $or: [{ status: 'out_of_stock' }, { quantity: 0 }],
+                        })
                         .select('name sku quantity unit')
                         .populate('category', 'name')
                         .sort({ updatedAt: -1 })
                         .limit(limit)
                         .lean();
+
                     return products.map((p) => ({
                         name: p.name,
                         sku: p.sku,
@@ -482,7 +476,9 @@ class UserService {
                 case 'get_import_orders': {
                     const limit = args.limit || 10;
                     const query = {};
+
                     if (args.status) query.status = args.status;
+
                     const startDate = getDateRange(args.period || 'all');
                     if (startDate) query.createdAt = { $gte: startDate };
 
@@ -508,7 +504,9 @@ class UserService {
                 case 'get_export_orders': {
                     const limit = args.limit || 10;
                     const query = {};
+
                     if (args.status) query.status = args.status;
+
                     const startDate = getDateRange(args.period || 'all');
                     if (startDate) query.createdAt = { $gte: startDate };
 
@@ -554,6 +552,7 @@ class UserService {
                     ]);
 
                     const stats = aggregation[0] || {};
+
                     return {
                         totalProducts,
                         lowStockCount,
@@ -565,53 +564,51 @@ class UserService {
                     };
                 }
 
+                case 'get_dashboard_stats': {
+                    const data = await DashboardService.getStats();
+
+                    return {
+                        totalProducts: data.overview.totalProducts,
+                        totalQuantity: data.overview.totalQuantity,
+                        stockValue: data.overview.stockValue,
+                        lowStock: data.overview.lowStock,
+                        outOfStock: data.overview.outOfStock,
+
+                        importTotal: data.thisMonth.importTotal,
+                        importCount: data.thisMonth.importCount,
+                        importItems: data.thisMonth.importItems,
+
+                        exportTotal: data.thisMonth.exportTotal,
+                        exportCount: data.thisMonth.exportCount,
+                        exportItems: data.thisMonth.exportItems,
+
+                        profit: data.thisMonth.profit,
+                    };
+                }
+
                 case 'search_products': {
-    const limit = args.limit || 10;
-    const query = {
-        status: { $ne: 'inactive' }
-    };
+                    const limit = args.limit || 10;
+                    const query = {
+                        status: { $ne: 'inactive' },
+                    };
 
-    if (args.keyword) {
-        query.$or = [
-            {
-                name: {
-                    $regex: args.keyword,
-                    $options: 'i'
-                }
-            },
-            {
-                sku: {
-                    $regex: args.keyword,
-                    $options: 'i'
-                }
-            },
-            {
-                brand: {
-                    $regex: args.keyword,
-                    $options: 'i'
-                }
-            },
-            {
-                barcode: {
-                    $regex: args.keyword,
-                    $options: 'i'
-                }
-            },
-            {
-                searchKeywords: {
-                    $regex: args.keyword,
-                    $options: 'i'
-                }
-            }
-        ];
-    }
+                    if (args.keyword) {
+                        query.$or = [
+                            { name: { $regex: args.keyword, $options: 'i' } },
+                            { sku: { $regex: args.keyword, $options: 'i' } },
+                            { brand: { $regex: args.keyword, $options: 'i' } },
+                            { barcode: { $regex: args.keyword, $options: 'i' } },
+                            { searchKeywords: { $regex: args.keyword, $options: 'i' } },
+                        ];
+                    }
 
-    if (args.brand) {
-        query.brand = {
-            $regex: args.brand,
-            $options: 'i'
-        };
-    }
+                    if (args.brand) {
+                        query.brand = {
+                            $regex: args.brand,
+                            $options: 'i',
+                        };
+                    }
+
                     if (args.category) {
                         const cat = await modelCategory.findOne({
                             name: { $regex: args.category, $options: 'i' },
@@ -668,6 +665,7 @@ class UserService {
 
                 case 'get_supplier_info': {
                     const query = {};
+
                     if (args.name) query.name = { $regex: args.name, $options: 'i' };
                     if (args.status) query.status = args.status;
 
@@ -692,114 +690,79 @@ class UserService {
             }
         };
 
-        // =====================================================================
-        // MULTI-TURN FUNCTION CALLING LOOP
-        // =====================================================================
         let currentContents = [...contents];
         let finalText = '';
         const MAX_TURNS = 5;
 
         for (let turn = 0; turn < MAX_TURNS; turn++) {
-             try {
-             const response = await ai.models.generateContent({
-                  model: 'gemini-2.5-flash',
-                contents: currentContents,
-                 config: {
-                    systemInstruction,
-                 tools,
-                },
+            try {
+                const response = await ai.models.generateContent({
+                    model: 'gemini-2.5-flash',
+                    contents: currentContents,
+                    config: {
+                        systemInstruction,
+                        tools,
+                    },
                 });
 
                 const candidate = response.candidates?.[0];
                 const parts = candidate?.content?.parts || [];
-                const functionCalls = parts.filter(
-                    (p) => p.functionCall
-                );
+                const functionCalls = parts.filter((p) => p.functionCall);
 
-        // Không gọi tool → trả text luôn
-        if (functionCalls.length === 0) {
-            finalText =
-                response.text ||
-                parts.find((p) => p.text)?.text ||
-                'Không có phản hồi';
-
-            break;
-        }
-
-        const functionResults = [];
-
-        for (const part of functionCalls) {
-            const { name, args } =
-                part.functionCall;
-
-            let result;
-
-            try {
-                result =
-                  await executeTool(
-                    name,
-                    args || {}
-                  );
-
-            } catch(err){
-
-                console.log(
-                  'Tool error:',
-                  err
-                );
-
-                result = {
-                    error: err.message
-                };
-            }
-
-            functionResults.push({
-                functionResponse:{
-                    name,
-                    response:{
-                        result
-                    }
+                if (functionCalls.length === 0) {
+                    finalText = response.text || parts.find((p) => p.text)?.text || 'Không có phản hồi';
+                    break;
                 }
-            });
-        }
 
-        currentContents = [
-            ...currentContents,
-            {
-                role:'model',
-                parts
-            },
-            {
-                role:'user',
-                parts:functionResults
+                const functionResults = [];
+
+                for (const part of functionCalls) {
+                    const { name, args } = part.functionCall;
+                    let result;
+
+                    try {
+                        result = await executeTool(name, args || {});
+                    } catch (err) {
+                        console.log('Tool error:', err);
+                        result = {
+                            error: err.message,
+                        };
+                    }
+
+                    functionResults.push({
+                        functionResponse: {
+                            name,
+                            response: {
+                                result,
+                            },
+                        },
+                    });
+                }
+
+                currentContents = [
+                    ...currentContents,
+                    {
+                        role: 'model',
+                        parts,
+                    },
+                    {
+                        role: 'user',
+                        parts: functionResults,
+                    },
+                ];
+            } catch (error) {
+                console.log('Gemini Error:', error);
+
+                if (error.message?.includes('429')) {
+                    finalText = 'AI đang quá tải hoặc vượt giới hạn lượt hỏi. Vui lòng chờ khoảng 15–20 giây.';
+                } else {
+                    finalText = 'Đã xảy ra lỗi khi xử lý chatbot.';
+                }
+
+                break;
             }
-        ];
-
-    } catch(error){
-
-        console.log(
-            'Gemini Error:',
-            error
-        );
-
-        if(
-          error.message?.includes(
-             '429'
-          )
-        ){
-            finalText =
-            'AI đang quá tải hoặc vượt giới hạn lượt hỏi. Vui lòng chờ khoảng 15–20 giây.';
-        }
-        else{
-            finalText =
-            'Đã xảy ra lỗi khi xử lý chatbot.';
         }
 
-        break;
-        }
-}
-
-        // Lưu lịch sử vào DB
         const lastUserMsg = contents.filter((c) => c.role === 'user').pop();
         const question = lastUserMsg?.parts?.[0]?.text || '';
 
